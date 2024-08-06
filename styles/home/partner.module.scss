@@ -1,0 +1,260 @@
+@import '../variables.module.scss';
+
+.partnerSec {
+    background: $black-color;
+    position: relative;
+    height: 280px;
+
+    h2 {
+        color: $white-color;
+    }
+
+    .svgTitle {
+        margin-bottom: 50px;
+    }
+
+    .partnerLogo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        .logoBox {
+            cursor: pointer;
+
+            &:after {
+                content: '';
+                background: $white-color;
+                width: 6px;
+                height: 6px;
+                display: block;
+                border-radius: 6px;
+                margin: 8px 0px 0px 0px;
+                transition: width 0.3s ease;
+            }
+
+            svg {
+                height: 40px;
+                width: auto;
+
+                path {
+                    fill: var(--fill-color);
+                    transition: fill 0.5s ease-in-out;
+                }
+
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
+
+                svg {
+                    path {
+                        fill: var(--original-color);
+                        transition: fill 0.5s ease-in-out;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    &::before {
+        content: '';
+        background-image: url('../../public/home/left_img.svg');
+        width: 365px;
+        height: 225px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        z-index: 0;
+        background-size: contain;
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../../public/home/right_img.svg');
+        width: 341px;
+        height: 341px;
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        z-index: 0;
+
+    }
+}
+
+@include media-query(1799px) {
+    .partnerSec {
+        height: 280px;
+
+        &::before {
+            left: 0px;
+            top: 70px;
+            background-size: 80%;
+        }
+
+        &::after {
+            right: 30px;
+            top: 80px;
+            background-size: 80%;
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .partnerSec {
+        height: 260px;
+
+        &::before {
+            left: 0px;
+            top: 70px;
+            background-size: 70%;
+        }
+
+        &::after {
+            right: 30px;
+            top: 0px;
+            background-size: 65%;
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .partnerSec {
+        height: 260px;
+        padding: 40px 0px;
+
+        &::before {
+            left: 0px;
+            top: 70px;
+            background-size: 60%;
+        }
+
+        &::after {
+            right: 30px;
+            top: 0px;
+            background-size: 55%;
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .partnerSec {
+        height: auto;
+        padding: 30px 0px;
+
+        .partnerLogo {
+            gap: 20px;
+        }
+
+        &::before {
+            left: 0px;
+            top: 40px;
+            background-size: 60%;
+        }
+
+        &::after {
+            right: 10px;
+            top: -30px;
+            background-size: 50%;
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .partnerSec {
+        height: auto;
+
+        .partnerLogo {
+            gap: 0px;
+
+            .logoBox {
+                svg {
+                    height: 35px;
+                }
+            }
+        }
+
+        &::before {
+            left: -50px;
+            top: 40px;
+            background-size: 50%;
+        }
+
+        &::after {
+            right: 0px;
+            top: -60px;
+            background-size: 40%;
+        }
+    }
+}
+
+@include media-query(900px) {
+    .partnerSec {
+        height: auto;
+
+        .partnerLogo {
+            gap: 0px;
+
+            .logoBox {
+                svg {
+                    height: 30px;
+                }
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .partnerSec {
+        height: auto;
+        padding: 30px 0px !important;
+
+        .svgTitle {
+            margin-bottom: 30px;
+
+            svg {
+                width: 270px;
+            }
+        }
+
+        .partnerLogo {
+            gap: 30px;
+            overflow-x: auto;
+
+            .logoBox {
+                svg {
+                    height: 30px;
+                }
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,496 @@
+@import '../variables.module.scss';
+
+.ctaSec {
+    background: $primary-color;
+    @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+    // height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: '';
+        background-image: url("../../public/home/ctaImgLeft.webp");
+        width: 270px;
+        height: 803px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    &::after {
+        content: '';
+        background-image: url("../../public/home/ctaImgRight.webp");
+        width: 270px;
+        height: 493px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    h2 {
+        color: $white-color;
+        font-weight: 600;
+        @include font-size(60px);
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: $white-color;
+        margin-bottom: 50px;
+        @include font-size(20px);
+        line-height: 30px;
+    }
+
+    .btnChat {
+        max-width: 600px;
+        height: 190px;
+        border: 2px solid $white-color;
+        margin: 30px auto 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font-size(40px);
+        line-height: 40px;
+        color: $white-color;
+        cursor: pointer;
+        position: relative;
+        transition: width 0.3s ease-in-out;
+
+        &:before {
+            content: '';
+            background: $white-color;
+            height: 100%;
+            width: 0px;
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        &:after {
+            content: '';
+            background-image: url('../../public/home/chatIcon.svg');
+            width: 98px;
+            height: 98px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: height 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        &:hover {
+            transition: width 0.3s ease-in-out;
+
+            &:before {
+                width: 40px;
+
+            }
+
+            &:after {
+                top: -35px;
+                transition: top 0.3s ease-in;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .ctaSec {
+        // height: 800px;
+
+        &::before {
+            background-size: 100%;
+        }
+
+        &::after {
+            background-size: 93%;
+            right: -20px;
+        }
+
+        h2 {
+            @include font-size(50px);
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(20px);
+            line-height: 30px;
+            @include padding (0px, 100px)
+        }
+
+        .btnChat {
+            max-width: 600px;
+            height: 190px;
+            margin: 30px auto 0px;
+            @include font-size(40px);
+            line-height: 40px;
+
+            &:after {
+                content: '';
+                width: 98px;
+                height: 98px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -35px;
+                    transition: top 0.3s ease-in;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .ctaSec {
+        // height: 800px;
+
+        &::before {
+            background-size: 100%;
+        }
+
+        &::after {
+            background-size: 90%;
+            right: -28px;
+        }
+
+        h2 {
+            @include font-size(45px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(16px);
+            line-height: 30px;
+            @include padding (0px, 100px)
+        }
+
+        .btnChat {
+            max-width: 500px;
+            height: 170px;
+            margin: 30px auto 0px;
+            @include font-size(35px);
+            line-height: 35px;
+
+            &:after {
+                content: '';
+                width: 98px;
+                height: 98px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -35px;
+                    transition: top 0.3s ease-in;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .ctaSec {
+        // height: 700px;
+
+        &::before {
+            background-size: 88%;
+        }
+
+        &::after {
+            background-size: 80%;
+            right: -58px;
+        }
+
+        h2 {
+            @include font-size(40px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(16px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 450px;
+            height: 130px;
+            margin: 30px auto 0px;
+            @include font-size(32px);
+            line-height: 32px;
+
+            &:after {
+                content: '';
+                width: 80px;
+                height: 80px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -42px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .ctaSec {
+        // height: 600px;
+
+        &::before {
+            background-size: 88%;
+        }
+
+        &::after {
+            background-size: 80%;
+            right: -58px;
+        }
+
+        h2 {
+            @include font-size(40px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(16px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 400px;
+            height: 120px;
+            margin: 30px auto 0px;
+            @include font-size(30px);
+            line-height: 30px;
+
+            &:after {
+                content: '';
+                width: 60px;
+                height: 60px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -42px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .ctaSec {
+        // height: 600px;
+
+        &::before {
+            background-size: 80%;
+        }
+
+        &::after {
+            background-size: 70%;
+            right: -88px;
+        }
+
+        h2 {
+            @include font-size(35px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(15px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 350px;
+            height: 100px;
+            margin: 30px auto 0px;
+            @include font-size(24px);
+            line-height: 24px;
+
+            &:after {
+                content: '';
+                width: 60px;
+                height: 60px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -30px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .ctaSec {
+        // height: 400px;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        h2 {
+            @include font-size(30px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            @include font-size(15px);
+            line-height: 30px;
+            @include padding (0px, 30px)
+        }
+
+        .btnChat {
+            max-width: 300px;
+            height: 80px;
+            margin: 30px auto 0px;
+            @include font-size(22px);
+            line-height: 22px;
+
+            &:after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                top: 20px;
+                right: 20px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 30px;
+                }
+
+                &:after {
+                    top: -25px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .ctaSec {
+        height: auto;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        h2 {
+            @include font-size(30px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            @include font-size(14px);
+            line-height: 24px;
+            @include padding (0px, 0px)
+        }
+
+        .btnChat {
+            max-width: 260px;
+            height: 70px;
+            margin: 30px auto;
+            @include font-size(22px);
+            line-height: 22px;
+
+            &:after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                top: 20px;
+                right: 20px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 20px;
+                }
+
+                &:after {
+                    top: -25px;
+                }
+            }
+        }
+    }
+}

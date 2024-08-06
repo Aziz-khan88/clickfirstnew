@@ -1,0 +1,189 @@
+@import '../variables.module.scss';
+
+.embla {
+    overflow: hidden;
+    width: 100%;
+
+    .embla__container {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        margin-top: 50px;
+
+        .embla__slide {
+            flex: 0 0 180px;
+            padding: 0px 5px;
+            box-sizing: border-box;
+
+            .itemBrand {
+                height: 100%;
+                width: 100%;
+
+                .itemImg {
+                    width: 180px;
+                    height: 274px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 100%;
+
+                    .itemName {
+                        height: 26px;
+                        border-radius: 4px;
+                        min-width: 100px;
+                        border: 1px solid #ffffff;
+                        @include font-size (9px);
+                        color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 20px;
+                        @include padding(0px, 15px);
+                        background-color: rgb(255, 255, 255, 0.2);
+                        transition: transform 0.5s ease, bottom 0.5s ease;
+
+                    }
+
+                    &.active {
+                        .itemName {
+                            @include padding(0px, 20px);
+                            @include font-size (15px);
+                            transform: rotate(-90deg);
+                            width: 200px;
+                            height: 48px;
+                            left: -65px;
+                            bottom: 110px;
+                            background-color: rgb(255, 255, 255, 0.2);
+                            transition: transform 0.5s ease, bottom 0.5s ease;
+                        }
+
+                    }
+                }
+
+
+
+
+            }
+
+        }
+    }
+
+    .embla__button__container {
+        display: flex;
+        justify-content: end;
+        gap: 15px;
+        margin-top: 15px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                width: 30px;
+                height: 30px;
+
+
+                path {
+                    fill: $black-color;
+                }
+            }
+
+            &.embla__prev {
+                font-size: 10px;
+                transform: rotate(180deg);
+            }
+
+            &.embla__next {
+                font-size: 10px;
+            }
+
+            &.disabled {
+                svg {
+                    path {
+                        fill: $disabled-color;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+@include media-query(1399px) {
+    .embla {
+        .embla__container {
+            margin-top: 30px;
+
+            .embla__slide {
+                .itemBrand {
+                    .itemImg {
+                        width: 180px;
+                        height: 240px;
+
+                        &.active {
+                            .itemName {
+                                @include padding(0px, 20px);
+                                @include font-size (13px);
+                                transform: rotate(-90deg);
+                                width: 160px;
+                                height: 40px;
+                                left: -45px;
+                                bottom: 100px;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .embla {
+        .embla__container {
+            margin-top: 30px;
+
+            .embla__slide {
+                .itemBrand {
+                    .itemImg {
+                        width: 180px;
+                        height: 240px;
+
+                        &.active {
+                            .itemName {
+                                @include padding(0px, 20px);
+                                @include font-size (13px);
+                                transform: rotate(-90deg);
+                                width: 160px;
+                                height: 40px;
+                                left: -45px;
+                                bottom: 100px;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {}
+
+@include media-query(900px) {}
+
+
+@include media-query(666px) {}

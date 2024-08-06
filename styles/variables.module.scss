@@ -1,0 +1,90 @@
+$primary-color: #2948FF;
+$secondary-color: #F6AC00;
+$white-color: #ffffff;
+$black-color: #000000;
+$max-container : 1640px;
+$border-color: #D8D8D8;
+$text-color: #000000;
+$disabled-color :#AAAAAA;
+
+
+:export {
+    primaryColor: $primary-color;
+    maxContainer: $max-container;
+    whiteColor: $white-color;
+    secondaryColor: $secondary-color;
+    borderColor: $border-color;
+    textColor: $text-color;
+    disabledColor: $disabled-color
+}
+
+// mixin Of Website
+@mixin media-query($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+@mixin padding($top, $right: $top, $bottom: $top, $left: $right) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin button($bg-color, $text-color, $border-color, $font-size) {
+    background-color: $bg-color;
+    color: $text-color;
+    cursor: pointer;
+    font-size: $font-size;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 10px;
+    transition: background-color 0.3s ease;
+    max-width: 250px;
+    padding: 0px 20px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $bg-color;
+        transition: background-color 0.3s ease;
+    }
+
+
+}
+
+@mixin button($bg-color, $text-color, $border-color, $font-size) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: 2px solid $border-color;
+    cursor: pointer;
+    font-size: $font-size;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 230px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: $bg-color;
+        border: 2px solid $border-color;
+    }
+
+    transition: background-color 0.3s ease;
+}
+
+@mixin gradient-background($direction, $colors...) {
+    background: linear-gradient($direction, $colors);
+}
+
+
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+    transition: $properties $duration $timing-function;
+}

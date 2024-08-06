@@ -1,0 +1,119 @@
+@import '../variables.module.scss';
+
+.headerMain {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+    height: 100px;
+
+    .logoMain {
+        a {
+            svg {
+                height: 55px;
+            }
+        }
+    }
+
+    &.active {
+        position: fixed;
+        top: 0;
+        background-color: $primary-color;
+        background: linear-gradient(180deg, rgba(56, 104, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        animation: slideFromTop 0.5s forwards;
+    }
+
+    @keyframes slideFromTop {
+        from {
+            top: -50px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+
+}
+
+@include media-query(1799px) {
+    .headerMain {
+        height: 100px;
+    }
+}
+
+@include media-query(1599px) {
+    .headerMain {
+        height: 80px;
+
+        .logoMain {
+            a {
+                svg {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .headerMain {
+        height: 80px;
+
+        .logoMain {
+            a {
+                svg {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .headerMain {
+        height: 75px;
+
+        .logoMain {
+            a {
+                svg {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .headerMain {
+        height: 70px;
+
+        .logoMain {
+            a {
+                svg {
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .headerMain {
+        height: 60px;
+
+        .logoMain {
+            a {
+                svg {
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {}

@@ -1,0 +1,436 @@
+@import '../variables.module.scss';
+
+.marketingPartner {
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url('../../public/home/left_img.svg');
+        width: 300px;
+        height: 200px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        z-index: 0;
+        background-size: contain;
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../../public/home/right_img.svg');
+        width: 220px;
+        height: 220px;
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        z-index: 0;
+    }
+
+    .marketingPartnerBox {
+        margin-top: 20px;
+        background: $primary-color;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+        border-radius: 25px;
+
+        .marketingBoxItem {
+            flex: 0 0 33%;
+            border-right: 1px solid $border-color;
+            padding: 20px 40px;
+
+            .boxIcon {
+                height: 120px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+
+                .logo {
+                    position: absolute;
+                    bottom: 20px;
+                    width: 100%;
+                    transition: transform 0.5s ease-in-out;
+
+                    svg {
+                        height: 80px;
+                        width: auto;
+                    }
+
+                    &.show {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+
+                    &.hide {
+                        transform: translateY(100px);
+                        opacity: 0;
+
+                    }
+                }
+
+
+
+            }
+
+            h5 {
+                color: $white-color;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $white-color;
+                margin-bottom: 0px;
+            }
+
+            &:last-child {
+                border-right: 0px;
+            }
+        }
+    }
+
+}
+
+@include media-query(1799px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            width: 300px;
+            height: 200px;
+            left: 0px;
+            top: 50px;
+        }
+
+        &::after {
+            width: 220px;
+            height: 220px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 20px;
+            padding: 30px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 20px 40px;
+
+                .boxIcon {
+                    height: 120px;
+                    margin-bottom: 20px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 80px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(1599px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            width: 280px;
+            height: 180px;
+            left: 0px;
+            top: 50px;
+        }
+
+        &::after {
+            width: 200px;
+            height: 200px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 20px;
+            padding: 25px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 20px 40px;
+
+                .boxIcon {
+                    height: 110px;
+                    margin-bottom: 20px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 65px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(1399px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            width: 280px;
+            height: 180px;
+            left: 0px;
+            top: 50px;
+        }
+
+        &::after {
+            width: 160px;
+            height: 160px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 20px;
+            padding: 20px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 20px 30px;
+
+                .boxIcon {
+                    height: 100px;
+                    margin-bottom: 20px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 55px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(1299px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            width: 280px;
+            height: 180px;
+            left: 0px;
+            top: 0px;
+        }
+
+        &::after {
+            width: 140px;
+            height: 140px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 20px;
+            padding: 20px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 20px 20px;
+
+                .boxIcon {
+                    height: 90px;
+                    margin-bottom: 15px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 50px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(1199px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            width: 280px;
+            height: 180px;
+            left: 0px;
+            top: 0px;
+        }
+
+        &::after {
+            width: 80px;
+            height: 80px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 10px;
+            padding: 20px 0px;
+            border-radius: 15px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 0px 25px;
+
+                .boxIcon {
+                    height: 80px;
+                    margin-bottom: 10px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 40px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(900px) {
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 10px;
+            padding: 20px 0px;
+            border-radius: 15px;
+
+            .marketingBoxItem {
+                flex: 0 0 33%;
+                padding: 0px 10px;
+
+                .boxIcon {
+                    height: 80px;
+                    margin-bottom: 10px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 40px;
+                            width: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@include media-query(666px) {
+
+    .marketingPartner {
+        position: relative;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        .marketingPartnerBox {
+            margin-top: 10px;
+            padding: 20px 20px;
+            border-radius: 15px;
+            flex-wrap: wrap;
+
+            .marketingBoxItem {
+                flex: 0 0 100%;
+                padding: 20px 10px;
+                border-right: 0px solid $border-color;
+                border-bottom: 1px solid $border-color;
+
+                .boxIcon {
+                    height: 80px;
+                    margin-bottom: 10px;
+
+
+                    .logo {
+                        position: absolute;
+                        bottom: 20px;
+
+                        svg {
+                            height: 40px;
+                            width: auto;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+            }
+        }
+
+    }
+}

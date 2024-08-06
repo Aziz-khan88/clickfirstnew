@@ -1,0 +1,406 @@
+@import '../variables.module.scss';
+
+.solutoinMain {
+    .solutionBox {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 40px;
+
+
+
+        .solutionItem {
+            flex: 0 0 24%;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            color: $white-color;
+            height: 370px;
+            width: 100%;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .solutionIcon {
+                margin-bottom: 30px;
+
+                svg {
+                    height: 50px;
+                    width: auto;
+                }
+            }
+
+            .solutionContent {
+                h3 {
+                    @include font-size(25px);
+                    margin-bottom: 20px;
+                    line-height: 30px;
+                }
+
+                p {
+                    color: $white-color;
+                    margin-bottom: 20px;
+                }
+
+
+            }
+
+            .buttonClass {
+                @include button($primary-color, $white-color, $primary-color, 16px);
+                border-radius: 5px;
+                display: flex;
+                padding: 0px 20px;
+                @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                border: 0px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                    border: 0px;
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 24%;
+                padding: 30px;
+                height: 215px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(23px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 16px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 16px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 24%;
+                padding: 25px;
+                height: 170px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(22px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 16px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 16px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 24%;
+                padding: 25px;
+                height: 170px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(22px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 16px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 16px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 24%;
+                padding: 25px;
+                height: 170px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(22px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 15px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 15px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 24%;
+                padding: 10px;
+                height: 150px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(20px);
+                        margin-bottom: 10px;
+                        line-height: 30px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 14px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 14px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 49%;
+                padding: 30px;
+                height: 170px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(22px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 50px;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 14px);
+                padding: 0px 20px;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 14px);
+                border-radius: 5px;
+                max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .solutoinMain {
+        .solutionBox {
+            .solutionItem {
+                flex: 0 0 100%;
+                padding: 30px;
+                height: 170px;
+
+                .solutionContent {
+                    h3 {
+                        @include font-size(22px);
+                        margin-bottom: 10px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .btnFlex {
+            gap: 20px;
+            margin-top: 20px;
+            flex-direction: column;
+
+            .buttonBlack {
+                @include button($primary-color, $white-color, $primary-color, 14px);
+                padding: 0px 20px;
+                border-radius: 5px;
+                width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 14px);
+                border-radius: 5px;
+                width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}

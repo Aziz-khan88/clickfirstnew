@@ -1,0 +1,17 @@
+@import '../variables.module.scss';
+
+.solutionSec {
+    background: $black-color;
+
+    h2 {
+        color: $white-color;
+    }
+}
+
+@include media-query(666px) {
+    .solutionSec {
+        svg {
+            width: 80%;
+        }
+    }
+}

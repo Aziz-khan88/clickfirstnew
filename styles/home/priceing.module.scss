@@ -1,0 +1,159 @@
+@import './variables.module.scss';
+
+.priceingSec {
+    padding-top: 0px;
+    overflow-x: hidden;
+
+    h2 {
+        span {
+            display: block;
+        }
+    }
+
+    .tabHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+
+        .tabName {
+            color: $secondary-color;
+            width: 200px;
+            height: 60px;
+            background: #F5F5F5;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @include font-size(20px);
+            color: $black-color;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                color: $primary-color;
+                font-weight: 400;
+            }
+
+            &.active {
+                background: rgb(57, 106, 252);
+                background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                color: $white-color;
+                transition: background-color 0.3s ease-in-out;
+
+                span {
+                    color: $white-color;
+                }
+
+            }
+        }
+    }
+
+    .tabBody {
+        display: block;
+
+        .tabContent {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                @include font-size(18px);
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 15px;
+
+            .tabName {
+                @include font-size(17px);
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 15px;
+
+            .tabName {
+                width: 150px;
+                height: 50px;
+                @include font-size(15px);
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .priceingSec {
+        padding: 0px !important;
+
+        .tabHeader {
+            gap: 5px;
+
+            .tabName {
+                width: 120px;
+                height: 40px;
+                @include font-size(13px);
+            }
+        }
+    }
+}

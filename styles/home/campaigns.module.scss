@@ -1,0 +1,212 @@
+@import './variables.module.scss';
+
+.campaignsSec {
+    @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+    position: relative;
+
+    &:before {
+        content: '';
+        background-image: url('../../public//home/bgObject.webp');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        mix-blend-mode: soft-light;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 0;
+        opacity: 0.2;
+    }
+
+    .mainContainer {
+        z-index: 1;
+        position: relative;
+
+        h2 {
+            span {
+                color: $white-color;
+                padding: 0px 20px;
+                display: flex;
+                align-items: center;
+                max-width: max-content;
+
+                &.first {
+                    background: $black-color;
+                    display: block;
+                    margin-bottom: 5px;
+                    // border-radius: 0px 18px 18px 18px;
+                }
+
+                &.last {
+                    background: $secondary-color;
+                    display: block;
+                    // border-radius: 18px 18px 0px 18px;
+                }
+            }
+        }
+
+        P {
+            color: $white-color;
+            text-align: justify;
+            padding-right: 30px;
+        }
+
+        .btnFlex {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+
+            .buttonBlack {
+                @include button($black-color, $white-color, $black-color, 16px);
+                border-radius: 5px;
+                display: flex;
+                padding: 0px 20px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 16px);
+                border-radius: 5px;
+                display: flex;
+                padding: 0px 20px;
+                max-width: 240px;
+
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(1299px) {
+    .campaignsSec {
+        .mainContainer {
+            p {
+                padding-right: 15px;
+            }
+
+            .btnFlex {
+                gap: 20px;
+                margin-top: 50px;
+
+                .buttonBlack {
+                    @include button($black-color, $white-color, $black-color, 15px);
+                    padding: 0px 20px;
+                    border-radius: 5px;
+                    max-width: 100%;
+                }
+
+                .buttonTrans {
+                    @include button(transparent, $white-color, $white-color, 15px);
+                    border-radius: 5px;
+                    max-width: 240px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .campaignsSec {
+        .mainContainer {
+            p {
+                padding-right: 0px;
+            }
+
+            .btnFlex {
+                gap: 20px;
+                margin-top: 50px;
+
+                .buttonBlack {
+                    @include button($black-color, $white-color, $black-color, 14px);
+                    padding: 0px 20px;
+                    border-radius: 5px;
+                    max-width: 100%;
+                }
+
+                .buttonTrans {
+                    @include button(transparent, $white-color, $white-color, 14px);
+                    border-radius: 5px;
+                    max-width: 240px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .campaignsSec {
+        .mainContainer {
+            .btnFlex {
+                gap: 20px;
+                margin-top: 50px;
+
+                .buttonBlack {
+                    @include button($black-color, $white-color, $black-color, 14px);
+                    padding: 0px 20px;
+                    border-radius: 5px;
+                    max-width: 100%;
+                }
+
+                .buttonTrans {
+                    @include button(transparent, $white-color, $white-color, 14px);
+                    border-radius: 5px;
+                    max-width: 240px;
+                    max-width: 100%;
+                }
+            }
+
+
+            img {
+                width: auto;
+                margin: 30px auto 0px;
+                display: block;
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+@include media-query(666px) {
+    .campaignsSec {
+        .mainContainer {
+            .btnFlex {
+                gap: 20px;
+                margin-top: 20px;
+                flex-direction: column;
+
+                .buttonBlack {
+                    @include button($black-color, $white-color, $black-color, 14px);
+                    padding: 0px 20px;
+                    border-radius: 5px;
+                    width: 240px;
+                }
+
+                .buttonTrans {
+                    @include button(transparent, $white-color, $white-color, 14px);
+                    border-radius: 5px;
+                    width: 240px;
+                }
+            }
+
+            img {
+                display: block;
+                margin: 30px auto 0px;
+                max-width: 90%;
+            }
+        }
+    }
+}

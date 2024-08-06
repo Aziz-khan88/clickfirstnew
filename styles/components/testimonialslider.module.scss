@@ -1,0 +1,182 @@
+@import '../variables.module.scss';
+
+.embla {
+    max-width: 100%;
+
+    .embla__viewport {
+        overflow: hidden;
+
+        .embla__container {
+            backface-visibility: hidden;
+            display: flex;
+            touch-action: pan-y pinch-zoom;
+            justify-content: space-between;
+
+            .embla__slide {
+                flex: 0 0 100%;
+                height: 480px;
+                min-width: 0;
+                padding-left: 0px;
+
+                .testimonialBox {
+                    height: 440px;
+
+                    .testimonialImg {
+                        position: relative;
+                        height: 100%;
+                        display: block;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+
+                        }
+
+                        &:before {
+                            content: '';
+                            background: rgba(0, 0, 0, 0.5);
+                            width: 100%;
+                            height: 100%;
+                            z-index: 0;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            z-index: 0;
+                        }
+
+                        .playBtn {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            cursor: pointer;
+                            @include transition(all);
+
+                            &:hover {
+                                @include transition(all);
+
+                                svg {
+                                    ellipse {
+                                        fill: $secondary-color;
+                                    }
+
+                                    path {
+                                        fill: $white-color;
+
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    .itemMain {
+                        padding-right: 80px;
+
+                        .txtItem {
+                            @include font-size(30px);
+                            line-height: 50px;
+                            color: $white-color;
+                            font-weight: 600;
+                            text-align: left;
+                            font-style: italic;
+                            margin-bottom: 80px;
+
+
+                        }
+
+                        .testimonialInfo {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .testimonialName {
+                                h6 {
+                                    font-size: 25px;
+                                    line-height: 35px;
+                                    color: $secondary-color;
+                                    font-weight: 600;
+                                    margin-bottom: 0px;
+
+                                    p {
+                                        color: #8B8B8B;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+                            }
+
+                            .testimonialRating {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .testimonialNumbers {
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    color: $white-color;
+                                    font-weight: 500;
+
+                                    svg {
+                                        margin-left: 10px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+
+
+                }
+            }
+        }
+
+        .embla__button__container {
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+            margin-top: 25px;
+            margin-right: 10px;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+
+
+                    path {
+                        fill: $black-color;
+                    }
+                }
+
+                &.embla__prev {
+                    font-size: 10px;
+                    transform: rotate(180deg);
+                }
+
+                &.embla__next {
+                    font-size: 10px;
+                }
+
+                &.disabled {
+                    svg {
+                        path {
+                            fill: $disabled-color;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

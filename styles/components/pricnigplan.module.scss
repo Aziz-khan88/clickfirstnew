@@ -1,0 +1,1240 @@
+@import '../variables.module.scss';
+
+.priceContainer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+
+
+    .priceBox {
+        flex: 0 0 490px;
+        flex: 1;
+        border: 1px solid #DEDEDE;
+        border-radius: 20px;
+        @include padding(30px, 60px);
+        background: #F5F5F5;
+        margin: 0 25px;
+        height: 900px;
+        color: $black-color;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+
+        .priceHeader {
+            text-align: center;
+            border-bottom: 1px solid $border-color;
+            @include padding(20px, 50px);
+            margin-bottom: 30px;
+
+            h5 {
+                @include font-size(24px);
+                line-height: 35px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                color: $black-color;
+            }
+
+            p {
+                margin-bottom: 0px;
+                color: $black-color;
+            }
+        }
+
+        .priceBody {
+            .priceNumber {
+                text-align: center;
+
+                .Amount {
+
+                    .Price {
+                        @include font-size(40px);
+                        line-height: 40px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+
+                        // span {
+                        //     display: inline-block;
+                        //     margin-right: 20px;
+                        //     @include font-size(30px);
+                        //     line-height: 40px;
+                        //     font-weight: 400;
+                        //     text-decoration: line-through;
+                        // }
+                    }
+
+                    .Time {
+                        @include font-size(18px);
+                        line-height: 30px;
+                        font-weight: 400;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            .pricePoints {
+                height: 430px;
+                overflow-y: auto;
+                width: 100%;
+                padding: 0px 25px;
+
+                &::-webkit-scrollbar {
+                    width: 7px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 10px 10px 6px #F3F3F3;
+                    border-radius: 4px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #9A9A9A;
+                    outline: 1px solid #9A9A9A;
+                    border-radius: 4px;
+                }
+
+                h6 {
+                    @include font-size(16px);
+                    line-height: 25px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0px 0px 10px -20px;
+                    padding: 0px;
+
+                    li {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        @include font-size(15px);
+                        line-height: 25px;
+
+                        span {
+                            padding-left: 20px;
+                        }
+
+                        svg {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .priceButton {
+                margin: 30px 0px;
+
+                .contactBtn {
+                    @include button($primary-color, $white-color, $primary-color, 16px);
+                    margin: 50px auto 0px;
+                    border-radius: 5px;
+                    background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                    border: 0px;
+
+                    &:hover {
+                        background: $black-color;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+
+        &:first-child {
+            margin-left: 0;
+            margin-top: 80px;
+
+            &::after {
+                content: '';
+                background-image: url('../../public/home/pricing/one.svg');
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: block;
+                width: 122px;
+                height: 122px;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+            margin-top: 80px;
+
+            &::after {
+                content: '';
+                background-image: url('../../public/home/pricing/three.svg');
+                position: absolute;
+                top: -50px;
+                right: -50px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: block;
+                width: 165px;
+                height: 171px;
+            }
+        }
+
+        &.active {
+            background: rgb(57, 106, 252);
+            background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+            color: $white-color;
+            border-color: #396AFC;
+
+            &::after {
+                content: '';
+                background-image: url('../../public/home/pricing/two.svg');
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: block;
+                width: 224px;
+                height: 150px;
+            }
+
+
+            .priceHeader {
+                border-color: $secondary-color;
+
+                h5 {
+                    color: $white-color;
+                }
+
+                p {
+                    color: $white-color;
+                }
+            }
+
+            svg {
+                path {
+                    fill: $white-color;
+                }
+            }
+
+            .pricePoints {
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #9A9A9A;
+                    outline: 1px solid #9A9A9A;
+                    border-radius: 4px;
+                }
+            }
+
+            .priceButton {
+                .contactBtn {
+                    @include button($white-color, $primary-color, $primary-color, 16px);
+                    margin: 50px auto 0px;
+                    border-radius: 5px;
+                    @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+                    border: 0px;
+
+                    &:hover {
+                        background: $secondary-color;
+                        border: 0px;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .priceContainer {
+        margin-top: 50px;
+
+        .priceBox {
+            @include padding(30px, 60px);
+            margin: 0 20px;
+            height: 870px;
+            flex: 0 0 450px;
+
+            .priceHeader {
+                @include padding(20px, 40px);
+                margin-bottom: 30px;
+
+                h5 {
+                    @include font-size(24px);
+                    line-height: 32px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(36px);
+                            line-height: 36px;
+
+                            span {
+                                margin-right: 20px;
+                                @include font-size(26px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(18px);
+                            line-height: 28px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 400px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+                    h6 {
+                        @include font-size(15px);
+                        line-height: 25px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            @include font-size(14px);
+                            line-height: 24px;
+
+                            font svg {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 30px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 16px);
+                        margin: 40px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    left: -50px;
+                    width: 122px;
+                    height: 122px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 165px;
+                    height: 171px;
+                }
+            }
+
+            &.active {
+                &::after {
+                    top: -30px;
+                    right: -40px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 16px);
+                        margin: 50px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .priceContainer {
+        margin-top: 50px;
+
+        .priceBox {
+            @include padding(30px, 40px);
+            margin: 0 20px;
+            height: 750px;
+            flex: 0 0 400px;
+
+            .priceHeader {
+                @include padding(20px, 30px);
+                margin-bottom: 25px;
+
+                h5 {
+                    @include font-size(24px);
+                    line-height: 32px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(34px);
+                            line-height: 34px;
+
+                            span {
+                                margin-right: 20px;
+                                @include font-size(24px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(16px);
+                            line-height: 26px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 330px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    h6 {
+                        @include font-size(15px);
+                        line-height: 25px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            @include font-size(14px);
+                            line-height: 24px;
+
+                            font svg {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 30px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 15px);
+                        margin: 40px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    left: -50px;
+                    width: 102px;
+                    height: 102px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 165px;
+                    height: 171px;
+                }
+            }
+
+            &.active {
+
+                &::after {
+                    top: -40px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 15px);
+                        margin: 50px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .priceContainer {
+        margin-top: 50px;
+
+        .priceBox {
+            @include padding(30px, 30px);
+            margin: 0 15px;
+            height: 730px;
+            flex: 0 0 380px;
+
+            .priceHeader {
+                @include padding(20px, 30px);
+                margin-bottom: 25px;
+
+                h5 {
+                    @include font-size(24px);
+                    line-height: 32px;
+
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(32px);
+                            line-height: 32px;
+
+                            span {
+                                margin-right: 18px;
+                                @include font-size(22px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(15px);
+                            line-height: 25px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 320px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    h6 {
+                        @include font-size(15px);
+                        line-height: 25px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            // @include font-size(13px);
+                            line-height: 24px;
+
+                            span {
+                                padding-left: 15px;
+                            }
+
+                            svg {
+                                margin-right: 10px;
+                                width: 10px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 30px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 15px);
+                        margin: 40px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -60px;
+                    left: -30px;
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 165px;
+                    height: 171px;
+                }
+            }
+
+            &.active {
+
+                &::after {
+                    top: -40px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 15px);
+                        margin: 50px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .priceContainer {
+        margin-top: 50px;
+
+        .priceBox {
+            @include padding(30px, 30px);
+            margin: 0 15px;
+            height: 680px;
+            flex: 0 0 370px;
+
+            .priceHeader {
+                @include padding(20px, 25px);
+                margin-bottom: 25px;
+
+                h5 {
+                    @include font-size(24px);
+                    line-height: 30px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(30px);
+                            line-height: 30px;
+
+                            span {
+                                margin-right: 18px;
+                                @include font-size(22px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(15px);
+                            line-height: 25px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 300px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    h6 {
+                        @include font-size(15px);
+                        line-height: 25px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+
+                            span {
+                                padding-left: 15px;
+                            }
+
+                            svg {
+                                margin-right: 10px;
+                                width: 10px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 30px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 14px);
+                        margin: 30px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -60px;
+                    left: -30px;
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 80px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 165px;
+                    height: 171px;
+                }
+            }
+
+            &.active {
+
+                &::after {
+                    top: -40px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 14px);
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .priceContainer {
+        margin-top: 50px;
+
+        .priceBox {
+            @include padding(30px, 20px);
+            margin: 0 10px;
+            height: 655px;
+            flex: 0 0 310px;
+
+            .priceHeader {
+                @include padding(20px, 15px);
+                margin-bottom: 20px;
+
+                h5 {
+                    @include font-size(22px);
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(28px);
+                            line-height: 28px;
+
+                            span {
+                                margin-right: 15px;
+                                @include font-size(20px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(14px);
+                            line-height: 20px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 280px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    h6 {
+                        @include font-size(13px);
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            @include font-size(12px);
+                            line-height: 22px;
+
+                            span {
+                                padding-left: 10px;
+                            }
+
+                            svg {
+                                margin-right: 5px;
+                                width: 10px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 25px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 14px);
+                        margin: 25px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 50px;
+
+                &::after {
+                    top: -50px;
+                    left: -20px;
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 50px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 165px;
+                    height: 171px;
+                }
+            }
+
+            &.active {
+
+                &::after {
+                    top: -40px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 14px);
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .priceContainer {
+        margin-top: 50px;
+        // flex-direction: column;
+        flex-wrap: wrap;
+
+        .priceBox {
+            @include padding(30px, 20px);
+            margin: 0 10px;
+            height: 550px;
+            flex: 0 0 310px;
+
+            .priceHeader {
+                @include padding(15px, 15px);
+                margin-bottom: 20px;
+
+                h5 {
+                    @include font-size(20px);
+                    line-height: 30px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(26px);
+                            line-height: 26px;
+
+                            span {
+                                margin-right: 15px;
+                                @include font-size(18px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(13px);
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 200px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
+
+                    h6 {
+                        @include font-size(13px);
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            @include font-size(12px);
+                            line-height: 22px;
+
+                            span {
+                                padding-left: 10px;
+                            }
+
+                            svg {
+                                margin-right: 5px;
+                                width: 10px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 20px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 13px);
+                        margin: 20px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 0px;
+
+                &::after {
+                    top: -20px;
+                    left: -20px;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 30px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 135px;
+                    height: 151px;
+                }
+            }
+
+            &.active {
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 13px);
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(666px) {
+    .priceContainer {
+        margin-top: 50px;
+        flex-wrap: wrap;
+
+        .priceBox {
+            @include padding(30px, 20px);
+            margin: 0 0px 0px 0px;
+            height: 550px;
+            flex: 0 0 310px;
+
+            .priceHeader {
+                @include padding(15px, 15px);
+                margin-bottom: 20px;
+
+                h5 {
+                    @include font-size(22px);
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .priceBody {
+                .priceNumber {
+                    .Amount {
+                        .Price {
+                            @include font-size(26px);
+                            line-height: 26px;
+
+                            span {
+                                margin-right: 15px;
+                                @include font-size(18px);
+                            }
+                        }
+
+                        .Time {
+                            @include font-size(13px);
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+                .pricePoints {
+                    height: 200px;
+                    padding: 0px 20px;
+
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
+
+                    h6 {
+                        @include font-size(13px);
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        margin: 0px 0px 10px -20px;
+
+                        li {
+                            @include font-size(12px);
+                            line-height: 22px;
+
+                            svg {
+                                margin-right: 5px;
+                                width: 10px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+                }
+
+                .priceButton {
+                    margin: 20px 0px;
+
+                    .contactBtn {
+                        @include button($primary-color, $white-color, $primary-color, 13px);
+                        margin: 20px auto 0px;
+                        border-radius: 5px;
+                        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                        border: 0px;
+
+                        &:hover {
+                            background: $black-color;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-top: 0px;
+
+                &::after {
+                    top: -20px;
+                    left: -20px;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 30px;
+                margin-bottom: 10px;
+
+                &::after {
+                    top: -30px;
+                    right: -50px;
+                    width: 135px;
+                    height: 151px;
+                }
+            }
+
+            &.active {
+                margin-top: 30px;
+
+                &::after {
+                    top: -50px;
+                    right: -50px;
+                    width: 224px;
+                    height: 150px;
+                }
+
+                .priceButton {
+                    .contactBtn {
+                        @include button($white-color, $primary-color, $primary-color, 13px);
+                        @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+
+                        &:hover {
+                            background: $secondary-color;
+                            border: 0px;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

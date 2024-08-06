@@ -1,0 +1,364 @@
+@import '../variables.module.scss';
+
+.ctaPackage {
+    .ctaBox {
+        // background: rgb(57, 106, 252);
+        // background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, rgba(56, 104, 252, 1) 10%, rgba(41, 72, 255, 1) 100%);
+        @include padding(30px, 0px);
+        border-radius: 20px;
+        height: 500px;
+        position: relative;
+
+        .imgPackage {
+            position: absolute;
+            top: -10px;
+            left: 0px;
+        }
+
+        .ctaMain {
+            max-width: 750px;
+            margin-left: 590px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            &:after {
+                content: '';
+                background-image: url("../../public/home/CtaRigth.webp");
+                background-position: bottom right;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 220px;
+                height: 250px;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+
+            h2 {
+                color: $white-color;
+
+                span {
+                    color: $secondary-color;
+                }
+            }
+
+            .btnFlex {
+                display: flex;
+                gap: 20px;
+
+                div {
+                    height: 115px;
+                    @include padding(0px, 30px);
+                    @include font-size(16px);
+                    line-height: 20px;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white-color;
+                    transition: background-color 0.3s ease;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &.btnOne {
+                        background: $black-color;
+                        border: 2px solid $black-color;
+                    }
+
+                    &.btnTwo {
+                        background: transparent;
+                        border: 2px solid $white-color;
+                    }
+
+                    &:hover {
+                        background-color: $secondary-color;
+                        border: 2px solid $secondary-color;
+                        transition: background-color 0.3s ease;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 500px;
+
+            .imgPackage {
+                top: -10px;
+                left: 0px;
+            }
+
+            .ctaMain {
+                max-width: 700px;
+                margin-left: 590px;
+
+                &:after {
+                    width: 220px;
+                    height: 250px;
+                }
+
+                .btnFlex {
+
+                    gap: 20px;
+
+                    div {
+                        height: 100px;
+                        @include padding(0px, 30px);
+                        @include font-size(16px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 500px;
+
+            .imgPackage {
+                top: -10px;
+                left: -60px;
+            }
+
+            .ctaMain {
+                max-width: 620px;
+                margin-left: 475px;
+
+                &:after {
+                    width: 220px;
+                    height: 250px;
+                }
+
+                .btnFlex {
+
+                    gap: 20px;
+
+                    div {
+                        height: 100px;
+                        @include padding(0px, 25px);
+                        @include font-size(15px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 450px;
+
+            .imgPackage {
+                top: -10px;
+                left: -40px;
+
+                img {
+                    height: 470px;
+                    width: auto;
+                }
+            }
+
+            .ctaMain {
+                max-width: 620px;
+                margin-left: 455px;
+
+                &:after {
+                    width: 220px;
+                    height: 250px;
+                }
+
+                .btnFlex {
+
+                    gap: 20px;
+
+                    div {
+                        height: 90px;
+                        @include padding(0px, 20px);
+                        @include font-size(15px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 400px;
+
+            .imgPackage {
+                top: -10px;
+                left: -40px;
+
+                img {
+                    height: 420px;
+                    width: auto;
+                }
+            }
+
+            .ctaMain {
+                max-width: 540px;
+                margin-left: 400px;
+
+                &:after {
+                    width: 220px;
+                    height: 250px;
+                }
+
+                .btnFlex {
+
+                    gap: 20px;
+
+                    div {
+                        height: 75px;
+                        @include padding(0px, 15px);
+                        @include font-size(14px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 400px;
+
+            .imgPackage {
+                top: -10px;
+                left: -40px;
+
+                img {
+                    height: 420px;
+                    width: auto;
+                }
+            }
+
+            .ctaMain {
+                max-width: 540px;
+                margin-left: 400px;
+
+                &:after {
+                    display: none;
+                }
+
+                .btnFlex {
+
+                    gap: 20px;
+
+                    div {
+                        height: 75px;
+                        @include padding(0px, 20px);
+                        @include font-size(14px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .ctaPackage {
+        .ctaBox {
+            height: 350px;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(56, 104, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+
+            .imgPackage {
+                display: none;
+                top: -10px;
+                left: -40px;
+
+                img {
+                    height: 370px;
+                    width: auto;
+                }
+            }
+
+            .ctaMain {
+                max-width: 600px;
+                margin: auto;
+                text-align: center;
+
+                &:after {
+                    display: none;
+                }
+
+                .btnFlex {
+                    gap: 20px;
+
+                    div {
+                        height: 75px;
+                        @include padding(0px, 20px);
+                        @include font-size(13px);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+
+    .ctaPackage {
+        .ctaBox {
+            height: auto;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(56, 104, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+            padding: 30px;
+
+            .imgPackage {
+                display: none;
+                top: -10px;
+                left: -40px;
+
+                img {
+                    height: 370px;
+                    width: auto;
+                }
+            }
+
+            .ctaMain {
+                max-width: 600px;
+                margin: auto;
+                text-align: center;
+
+                &:after {
+                    display: none;
+                }
+
+                .btnFlex {
+                    flex-direction: column;
+                    gap: 20px;
+
+                    div {
+                        height: 60px;
+                        @include padding(0px, 10px);
+                        @include font-size(13px);
+
+                    }
+                }
+            }
+        }
+    }
+}

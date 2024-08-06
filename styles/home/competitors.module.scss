@@ -1,0 +1,117 @@
+@import '../variables.module.scss';
+
+.competitorsSec {
+    h2 {
+        span {
+            color: $white-color;
+            padding: 0px 20px;
+            display: flex;
+            align-items: center;
+            max-width: max-content;
+
+
+            &.first {
+                background: $primary-color;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            &.last {
+                background: $black-color;
+                display: block;
+
+            }
+        }
+    }
+
+    p {
+        text-align: justify;
+        padding-right: 30px;
+    }
+
+    .buttonClass {
+        @include button($primary-color, $white-color, $primary-color, 16px);
+        margin-top: 30px;
+        border-radius: 5px;
+        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        border: 0px;
+
+        &:hover {
+            background: $secondary-color;
+            border: 0px;
+        }
+    }
+}
+
+
+@include media-query(1399px) {
+    .competitorsSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 16px);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .competitorsSec {
+        p {
+            padding-right: 15px;
+        }
+
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 15px);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .competitorsSec {
+        p {
+            padding-right: 0px;
+        }
+
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            border-radius: 5px;
+        }
+    }
+}
+
+@include media-query(900px) {
+    .competitorsSec {
+
+
+        img {
+            width: auto;
+            margin: auto;
+            display: block;
+            max-width: 60%;
+        }
+
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            border-radius: 5px;
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .competitorsSec {
+        img {
+            width: auto;
+            margin: 30px auto 0px;
+            display: block;
+            max-width: 90%;
+        }
+
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 13px);
+            border-radius: 5px;
+        }
+    }
+}

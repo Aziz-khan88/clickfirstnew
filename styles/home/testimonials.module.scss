@@ -1,0 +1,11 @@
+@import '../variables.module.scss';
+
+.testimonialSec {
+    background: $black-color;
+    margin-bottom: 100px;
+
+    h2,
+    p {
+        color: $white-color;
+    }
+}

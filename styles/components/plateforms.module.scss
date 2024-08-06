@@ -1,0 +1,166 @@
+@import '../variables.module.scss';
+
+
+.platfromSec {
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .platfromBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .platfromItem {
+            flex: 0 0 14%;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .platformIcon {
+                cursor: pointer;
+
+                svg {
+                    margin-bottom: 30px;
+                    transition: .5s;
+                    transform: scale(0.9);
+                }
+
+                .platformName {
+                    @include font-size(15px);
+                    color: $black-color;
+                    margin-bottom: 0px;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    svg {
+                        transform: scale(1);
+
+                        path {
+                            fill: var(--original-color);
+                            // transition: fill 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@include media-query(1399px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 160px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px
+                    }
+
+                    .platformName {
+                        @include font-size(15px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 150px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 40px;
+                    }
+
+                    .platformName {
+                        @include font-size(14px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 150px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 40px;
+                    }
+
+                    .platformName {
+                        @include font-size(14px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 110px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 30px;
+                    }
+
+                    .platformName {
+                        @include font-size(13px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 80px;
+                flex: 1 0 25%;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 10px;
+                        height: 25px;
+                    }
+
+                    .platformName {
+                        @include font-size(11px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import '../variables.module.scss';
+
+.caseStudy {
+    background: $black-color;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+
+
+    .caseslider {
+        position: relative;
+
+        &:after {
+            content: '';
+            background: $black-color;
+            width: 300%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: -294%;
+            z-index: 1;
+        }
+    }
+
+
+    h2 {
+        color: $white-color;
+        margin-bottom: 80px
+    }
+
+    .caseBox {
+        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        height: 750px;
+        border-radius: 20px;
+        padding: 30px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        .imgBox {
+            background: #F2F2F2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contentBox {
+            h5 {
+                color: $white-color;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $white-color;
+                margin-bottom: 30px;
+            }
+
+        }
+
+        .statsBox {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+
+            .statsItem {
+                border-right: 1px solid $border-color;
+                padding: 0px 40px;
+
+                .points {
+                    font-size: 40px;
+                    line-height: 40px;
+                    font-weight: 800;
+                    color: $secondary-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    svg {
+                        height: 26px;
+                        margin-right: 10px;
+                        width: auto;
+                    }
+                }
+
+                h6 {
+                    font-size: 15px;
+                    text-align: center;
+                    color: $white-color;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                }
+
+                &:first-child {
+                    padding-left: 0px;
+                }
+
+                &:last-child {
+                    padding-right: 0px;
+                    border-right: 0px;
+                }
+            }
+        }
+    }
+
+}

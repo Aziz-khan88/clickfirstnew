@@ -1,0 +1,59 @@
+@import '../variables.module.scss';
+
+.faqSec {
+
+    .faqTabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .faqItem {
+            flex: 0 0 calc(50% - 20px);
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 0.3s ease-out;
+
+            .tabTitle {
+                font-size: 18px;
+                line-height: 26px;
+                height: 70px;
+                font-weight: 500;
+                color: $black-color;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-right: 20px;
+                cursor: pointer;
+                border-bottom: 1px solid $border-color;
+
+
+                svg {
+                    height: 20px;
+                    width: auto;
+                    position: absolute;
+                    right: 0px;
+                    transition: transform 0.3s;
+                }
+            }
+
+            &.active {
+                height: 100%;
+                transition: height 0.3s ease-in;
+
+                .tabTitle {
+                    svg {
+                        transition: transform 0.3s;
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                .tabContent {
+                    padding: 15px 15px 0px 0px;
+                }
+            }
+
+        }
+    }
+}
