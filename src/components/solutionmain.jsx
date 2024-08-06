@@ -83,7 +83,7 @@ const SolutionMain = () => {
                                         <h3>{item.title}</h3>
                                         <p>{item.txt}</p>
                                     </div>
-                                    <Link href="#" className="commonClass">Get a Free Quote</Link>
+                                    <Link href="#" className="commonClass" aria-label="Get a Free Quote">Get a Free Quote</Link>
                                 </div>
                             ))}
                         </div>

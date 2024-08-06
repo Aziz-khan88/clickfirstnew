@@ -76,7 +76,7 @@ const Services = () => {
                                     <div className={styles.itemTxt}>
                                         <h3>{item.title}</h3>
                                         <p>{item.txt}</p>
-                                        <Link href="#">See More Details <ArrowIcon /></Link>
+                                        <Link href="#" aria-label="See More Details">See More Details <ArrowIcon /></Link>
                                     </div>
                                 </div>
                             ))}

@@ -248,7 +248,7 @@ const Industries = () => {
                 <Row>
                     <Col xxl={12} xl={12} lg={12} className="m-auto p-0">
                         <IndustriesSlider slides={SLIDES} options={OPTIONS} />
-                        <Link href="#" className="commonClass marginAuto">Let’s Discuss Your Project</Link>
+                        <Link href="#" className="commonClass marginAuto" aria-label="Let’s Discuss Your Project">Let’s Discuss Your Project</Link>
                     </Col>
                 </Row>
             </Container>

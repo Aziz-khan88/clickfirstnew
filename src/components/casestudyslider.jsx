@@ -48,8 +48,8 @@ const CaseStudySlider = (props) => {
                                     <h5>{item.title}</h5>
                                     <p>{item.txt}</p>
                                     <div className="btnTow">
-                                        <Link href="#" className="buttonStyle">Read Case Study</Link>
-                                        <Link href="tel:346-299-2202" className="buttonStyle borderStyle">Call Now: 346-299-2202</Link>
+                                        <Link href="#" className="buttonStyle" aria-label="Read Case Study">Read Case Study</Link>
+                                        <Link href="tel:346-299-2202" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
                                     </div>
                                 </div>
                                 <div className={styles.statsBox}>

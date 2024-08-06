@@ -1,4 +1,3 @@
-import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/components/ctapackage.module.scss"
 import Image from 'next/image'

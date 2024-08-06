@@ -17,8 +17,8 @@ const Guide = () => {
                         <p>Struggling to monetize your YouTube channel and navigate its complex policies? Many YouTubers face stagnant growth and limited revenue due to a lack of expertise. Without the right guidance, you might miss out on significant earnings and feel demotivated despite your efforts.</p>
                         <p>Click First SMM’s YouTube Monetization services can help. We’ll increase your subscriber count and optimize your video content for higher ad revenue. Gain access to advanced analytics and insights, enabling informed decisions to boost your channels performance. Say goodbye to stagnant growth and elevate your monetization potential with Click First SMM, watching your revenue soar.</p>
                         <div className="btnTow">
-                            <Link href="#" className="buttonStyle">Get a Free Quote</Link>
-                            <Link href="#" className="buttonStyle borderStyle">Call Now: 346-299-2202</Link>
+                            <Link href="#" className="buttonStyle" aria-label="Get a Free Quote">Get a Free Quote</Link>
+                            <Link href="#" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
                         </div>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">

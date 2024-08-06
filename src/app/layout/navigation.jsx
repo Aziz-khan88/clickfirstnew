@@ -50,51 +50,51 @@ const Navigation = (props) => {
             <div className={`${styles.mainMenu} ${isActive ? `${styles.active}` : ''}`}>
                 <ul>
                     <li>
-                        <Link href="#">Home</Link>
+                        <Link href="/" aria-label="Home Page">Home</Link>
                     </li>
                     <li >
-                        <Link href="#" >Services <SubMenuIcon /></Link>
+                        <Link href="#" aria-label="Services Page">Services <SubMenuIcon /></Link>
                         <div className={styles.subMenu} >
                             <div className={styles.MenuListing}>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon1 />Social Media Management</Link>
+                                    <Link href="#" aria-label="Social Media Management Page"><ServicesIcon1 />Social Media Management</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon2 />Search Engine Optimization</Link>
+                                    <Link href="#" aria-label="Search Engine Optimization Page"><ServicesIcon2 />Search Engine Optimization</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon3 />Influencer Marketing</Link>
+                                    <Link href="#" aria-label="Influencer Marketing Page"><ServicesIcon3 />Influencer Marketing</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon4 />Google Ads</Link>
+                                    <Link href="#" aria-label="Google Ads Page"><ServicesIcon4 />Google Ads</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon5 />Email Marketing</Link>
+                                    <Link href="#" aria-label="Email Marketing Page"><ServicesIcon5 />Email Marketing</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon6 />YouTube Optimization</Link>
+                                    <Link href="#" aria-label="YouTube Optimization Page"><ServicesIcon6 />YouTube Optimization</Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#"><ServicesIcon6 />YouTube Monetization</Link>
+                                    <Link href="#" aria-label="YouTube Monetization Page"><ServicesIcon6 />YouTube Monetization</Link>
                                 </div>
                             </div>
                         </div>
 
                     </li>
                     <li>
-                        <Link href="#">Influencer Marketing</Link>
+                        <Link href="#" aria-label="Influencer Marketing Page">Influencer Marketing</Link>
                     </li>
                     <li>
-                        <Link href="#">YouTube monetization</Link>
+                        <Link href="#" aria-label="YouTube monetization Page">YouTube monetization</Link>
                     </li>
                     <li>
-                        <Link href="#">About</Link>
+                        <Link href="#" aria-label="About Page">About</Link>
                     </li>
                     <li>
-                        <Link href="#">Contact Us</Link>
+                        <Link href="#" aria-label="Contact Page">Contact Us</Link>
                     </li>
                     <li>
-                        <Link href="#">Call Now: 346-299-2202</Link>
+                        <Link href="#" aria-label="Call Now Page">Call Now: 346-299-2202</Link>
                     </li>
                 </ul>
             </div>

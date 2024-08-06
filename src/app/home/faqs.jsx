@@ -65,7 +65,7 @@ const Faqs = () => {
                         <div className={styles.faqTitle}>
                             <h2>Answers To Frequently Asked <span className="lastHeading">Questions<TitleBorderLine /></span></h2>
                             <p>In addition to the creative direction, we design Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
-                            <Link href="#" className="commonClass">Let’s Discuss</Link>
+                            <Link href="#" className="commonClass" aria-label="Let’s Discuss">Let’s Discuss</Link>
                         </div>
                     </Col>
                     <Col lg={8} md={6}>

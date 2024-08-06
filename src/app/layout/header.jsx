@@ -28,7 +28,7 @@ const Header = () => {
                 <Row className="h-100">
                     <Col xxl={3} xl={3} lg={3} md={6} xs={6} className="my-auto">
                         <div className={styles.logoMain}>
-                            <Link href={"/"}>
+                            <Link href={"/"} aria-label="Logo Links">
                                 <ClickFirstLogo />
                             </Link>
                         </div>

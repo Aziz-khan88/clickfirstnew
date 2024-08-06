@@ -17,27 +17,27 @@ const Footer = () => {
                             </div>
                             <ul className={styles.footerIcons}>
                                 <li>
-                                    <a href="https://www.facebook.com/clickfirstsmm" target="_blank">
+                                    <a href="https://www.facebook.com/clickfirstsmm" target="_blank" aria-label="Facebook Page">
                                         <FooterFacebookLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/clickfirstsmm" target="_blank">
+                                    <a href="https://twitter.com/clickfirstsmm" target="_blank" aria-label="Twitter Page">
                                         <FooterTwitterLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/company/clickfirst-smm" target="_blank">
+                                    <a href="https://www.linkedin.com/company/clickfirst-smm" target="_blank" aria-label="Linkedin Page">
                                         <FooterLinkedinLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/clickfirstsmm" target="_blank" className={styles.instagram}>
+                                    <a href="https://www.instagram.com/clickfirstsmm" target="_blank" className={styles.instagram} aria-label="Instagram Page">
                                         <FooterInstagramLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/@clickfirstsmm" target="_blank">
+                                    <a href="https://www.youtube.com/@clickfirstsmm" target="_blank" aria-label="Youtube Page">
                                         <FooterYoutubeLogo />
                                     </a>
                                 </li>
@@ -49,22 +49,22 @@ const Footer = () => {
                                 <div className={styles.usefullLinks}>
                                     <h6>LINKS</h6>
                                     <ul>
-                                        <li><Link href="#">Home</Link></li>
-                                        <li><Link href="#">Pricing</Link></li>
-                                        <li><Link href="#">About</Link></li>
-                                        <li><Link href="#">Contact</Link></li>
+                                        <li><Link href="#" aria-label="Home Page">Home</Link></li>
+                                        <li><Link href="#" aria-label="Pricing Page">Pricing</Link></li>
+                                        <li><Link href="#" aria-label="About Page">About</Link></li>
+                                        <li><Link href="#" aria-label="Contact Page">Contact</Link></li>
                                     </ul>
                                 </div>
                                 <div className={styles.usefullLinks}>
                                     <h6>SERVICES</h6>
                                     <ul>
-                                        <li><Link href="#">Social Media Marketing</Link></li>
-                                        <li><Link href="#">Search Engine Optimization</Link></li>
-                                        <li><Link href="#">Influencer Marketing</Link></li>
-                                        <li><Link href="#">Google Ads</Link></li>
-                                        <li><Link href="#">Email Marketing</Link></li>
-                                        <li><Link href="#">YouTube Optimization</Link></li>
-                                        <li><Link href="#">YouTube Monetization</Link></li>
+                                        <li><Link href="#" aria-label="Social Media Marketing Page">Social Media Marketing</Link></li>
+                                        <li><Link href="#" aria-label="Search Engine Optimization Page">Search Engine Optimization</Link></li>
+                                        <li><Link href="#" aria-label="Influencer Marketing Page">Influencer Marketing</Link></li>
+                                        <li><Link href="#" aria-label="Google Ads Page">Google Ads</Link></li>
+                                        <li><Link href="#" aria-label="Email Marketing Page" >Email Marketing</Link></li>
+                                        <li><Link href="#" aria-label="YouTube Optimization Page">YouTube Optimization</Link></li>
+                                        <li><Link href="#" aria-label="YouTube Monetization Page">YouTube Monetization</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const Footer = () => {
                                         <EmailIcon />
                                     </div>
                                     <div>
-                                        <Link href="mailto:support@clickfirstsmm.com">support@clickfirstsmm.com</Link>
+                                        <Link href="mailto:support@clickfirstsmm.com" aria-label="Email Page">support@clickfirstsmm.com</Link>
                                     </div>
 
                                 </li>
@@ -103,7 +103,7 @@ const Footer = () => {
                                         <PhoneIcon />
                                     </div>
                                     <div>
-                                        <Link href="tel:346-299-2202">346-299-2202</Link>
+                                        <Link href="tel:346-299-2202" aria-label="Contact Links">346-299-2202</Link>
                                     </div>
                                 </li>
                             </ul>
@@ -120,10 +120,10 @@ const Footer = () => {
                         <Col xl={6} lg={6} md={6} className="my-auto">
                             <ul className={styles.legalLinks}>
                                 <li>
-                                    <Link href="#">Terms and Conditions</Link>
+                                    <Link href="#" aria-label="Terms and Conditions Page">Terms and Conditions</Link>
                                 </li>
                                 <li>
-                                    <Link href="#">Privacy Policy</Link>
+                                    <Link href="#" aria-label="Privacy Policy Page">Privacy Policy</Link>
                                 </li>
                             </ul>
                         </Col>
