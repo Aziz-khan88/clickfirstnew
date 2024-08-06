@@ -7,11 +7,3 @@
         color: $white-color;
     }
 }
-
-@include media-query(666px) {
-    .solutionSec {
-        svg {
-            width: 80%;
-        }
-    }
-}

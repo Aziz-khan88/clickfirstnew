@@ -17,7 +17,7 @@ const Campaigns = () => {
                         </h2>
                         <p>Without the right strategies, you might waste resources and miss out on potential customers, which can be discouraging and hinder your brand’s success.</p>
                         <p>Navigating the complexities of paid marketing, identifying the right niches, and reaching your ideal target audience can be overwhelming. Ineffective ad targeting, poor optimization, and lack of actionable insights can lead to subpar results and wasted investment.</p>
-                        <p>Release the full potential of your brand with Click First SMM&apos;s Paid Marketing Services. Our expert team creates and manages effective paid marketing campaigns tailored to your niche, ensuring you reach your target audience and achieve your marketing goals.</p>
+                        <p>Release the full potential of your brand with Click First SMM’s Paid Marketing Services. Our expert team creates and manages effective paid marketing campaigns tailored to your niche, ensuring you reach your target audience and achieve your marketing goals.</p>
                         <p>Ready to take your brand to the next level? Contact Click First SMM today and start seeing real results!</p>
                         <div className={styles.btnFlex}>
                             <Link href="#" className={styles.buttonBlack}>Get a Free Quote</Link>

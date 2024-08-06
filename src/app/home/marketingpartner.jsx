@@ -6,7 +6,7 @@ import { ClutchLogo, MetaLogo, SEOLogo, TitleBorderLine } from '@/src/app/app-co
 
 const MarketingPartner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const logos = [<MetaLogo />, <ClutchLogo />];
+    const logos = [<MetaLogo key="meta" />, <ClutchLogo key="clutch" />];
 
     useEffect(() => {
         const interval = setInterval(() => {

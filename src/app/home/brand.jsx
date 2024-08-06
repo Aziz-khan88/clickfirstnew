@@ -49,8 +49,8 @@ const Brand = () => {
                         <h2><span className={styles.first}>Skyrocket Your Brand</span>
                             <span className={styles.last}>with Influencer Stardom</span>
                         </h2>
-                        <p>Boost your brand&apos;s visibility with influencer marketing from Click First SMM. Our expert strategists excel in creating genuine, impactful partnerships with top niche influencers. By tapping into their loyal followers and leveraging their trust, we&apos;ll help you reach your target audience, build credibility, and drive a surge in website traffic and conversions.</p>
-                        <p>Eliminate the guesswork with Click First SMM&apos;s data-driven influencer marketing approach. We&apos;ll connect you with the ideal influencers, design engaging campaigns, and deliver measurable results that elevate your business. Amplify your reach and enhance your brand with Click First SMM&apos;s influencer marketing expertise.</p>
+                        <p>Boost your brand’s visibility with influencer marketing from Click First SMM. Our expert strategists excel in creating genuine, impactful partnerships with top niche influencers. By tapping into their loyal followers and leveraging their trust, we’ll help you reach your target audience, build credibility, and drive a surge in website traffic and conversions.</p>
+                        <p>Eliminate the guesswork with Click First SMM’s data-driven influencer marketing approach. We’ll connect you with the ideal influencers, design engaging campaigns, and deliver measurable results that elevate your business. Amplify your reach and enhance your brand with Click First SMM’s influencer marketing expertise.</p>
                         <Link href="#" className={styles.buttonClass}>Get a Free Quote</Link>
                         <BrandCarousel onVideoSelect={handleVideoSelect} />
                     </Col>

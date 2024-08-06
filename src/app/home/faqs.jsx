@@ -64,7 +64,7 @@ const Faqs = () => {
                     <Col lg={4}>
                         <h2>Answers To Frequently Asked Questions</h2>
                         <p>In addition to the creative direction, we design Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
-                        <Link href="#" className="commonClass">Let's Discuss</Link>
+                        <Link href="#" className="commonClass">Let’s Discuss</Link>
                     </Col>
                     <Col lg={8}>
                         <div className={styles.faqTabs}>

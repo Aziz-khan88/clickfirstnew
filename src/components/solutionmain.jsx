@@ -70,7 +70,7 @@ const data = [
 const SolutionMain = () => {
     return (
         <section className={styles.solutoinMain}>
-            <Container>
+            <Container className="p-0">
                 <Row>
                     <Col xxl={12}>
                         <div className={styles.solutionBox}>
