@@ -6,7 +6,7 @@ import IMG01 from "media/home/casestudy/Img01.webp"
 import BgImg from "media/home/casestudy/bg_small.webp"
 
 
-const OPTIONS = { align: 'start', loop: true }
+const OPTIONS = { align: 'start', loop: false }
 const SLIDES = [
     {
         title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",

@@ -14,7 +14,7 @@
 
             .embla__slide {
                 flex: 0 0 100%;
-                height: 480px;
+                height: 440px;
                 min-width: 0;
                 padding-left: 0px;
 
@@ -23,7 +23,7 @@
 
                     .testimonialImg {
                         position: relative;
-                        height: 100%;
+                        height: 440px;
                         display: block;
 
                         img {
@@ -134,49 +134,465 @@
             }
         }
 
-        .embla__button__container {
-            display: flex;
-            justify-content: end;
-            gap: 15px;
-            margin-top: 25px;
-            margin-right: 10px;
+    }
 
-            div {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-
-                svg {
-                    width: 30px;
-                    height: 30px;
+}
 
 
-                    path {
-                        fill: $black-color;
-                    }
-                }
+@include media-query(1799px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 440px;
 
-                &.embla__prev {
-                    font-size: 10px;
-                    transform: rotate(180deg);
-                }
+                    .testimonialBox {
+                        height: 440px;
 
-                &.embla__next {
-                    font-size: 10px;
-                }
+                        .testimonialImg {
+                            height: 440px;
 
-                &.disabled {
-                    svg {
-                        path {
-                            fill: $disabled-color;
+                            .playBtn {
+                                svg {
+                                    height: 90px;
+                                    width: auto;
+                                }
+                            }
+
                         }
+
+                        .itemMain {
+                            padding-right: 80px;
+
+                            .txtItem {
+                                @include font-size(30px);
+                                line-height: 50px;
+                                margin-bottom: 80px;
+
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 25px;
+                                        line-height: 35px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 20px;
+                                        line-height: 30px;
+
+                                        svg {
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
                     }
                 }
             }
-
-
         }
     }
+}
 
+@include media-query(1599px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 350px;
+
+                    .testimonialBox {
+                        height: 350px;
+
+                        .testimonialImg {
+                            height: 350px;
+
+                            .playBtn {
+                                svg {
+                                    height: 80px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 80px;
+
+                            .txtItem {
+                                @include font-size(25px);
+                                line-height: 40px;
+                                margin-bottom: 70px;
+
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 22px;
+                                        line-height: 32px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 18px;
+                                        line-height: 28px;
+
+                                        svg {
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 300px;
+
+                    .testimonialBox {
+                        height: 300px;
+
+                        .testimonialImg {
+                            height: 300px;
+
+                            .playBtn {
+                                svg {
+                                    height: 70px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 60px;
+
+                            .txtItem {
+                                @include font-size(22px);
+                                line-height: 36px;
+                                margin-bottom: 50px;
+
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 17px;
+                                        line-height: 27px;
+
+                                        svg {
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 300px;
+
+                    .testimonialBox {
+                        height: 300px;
+
+                        .testimonialImg {
+                            height: 300px;
+
+                            .playBtn {
+                                svg {
+                                    height: 70px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 60px;
+
+                            .txtItem {
+                                @include font-size(22px);
+                                line-height: 36px;
+                                margin-bottom: 50px;
+
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 17px;
+                                        line-height: 27px;
+
+                                        svg {
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 250px;
+
+                    .testimonialBox {
+                        height: 250px;
+
+                        .testimonialImg {
+                            height: 250px;
+
+                            .playBtn {
+                                svg {
+                                    height: 50px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 30px;
+
+                            .txtItem {
+                                @include font-size(18px);
+                                line-height: 30px;
+                                margin-bottom: 50px;
+
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 15px;
+                                        line-height: 25px;
+
+                                        svg {
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 220px;
+
+                    .testimonialBox {
+                        height: 220px;
+
+                        .testimonialImg {
+                            height: 220px;
+
+                            .playBtn {
+                                svg {
+                                    height: 40px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 0px;
+
+                            .txtItem {
+                                @include font-size(16px);
+                                line-height: 26px;
+                                margin-bottom: 30px;
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 13px;
+                                        line-height: 23px;
+
+                                        svg {
+                                            margin-left: 8px;
+                                            width: auto;
+                                            height: 35px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(666px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: auto;
+
+                    .testimonialBox {
+                        height: auto;
+
+                        .testimonialImg {
+                            height: 200px;
+                            margin-top: 20px;
+
+                            .playBtn {
+                                svg {
+                                    height: 40px;
+                                    width: auto;
+                                }
+                            }
+
+                        }
+
+                        .itemMain {
+                            padding-right: 0px;
+
+                            .txtItem {
+                                @include font-size(15px);
+                                line-height: 26px;
+                                margin-bottom: 20px;
+
+                            }
+
+                            .testimonialInfo {
+                                .testimonialName {
+                                    h6 {
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                    }
+                                }
+
+                                .testimonialRating {
+                                    .testimonialNumbers {
+                                        font-size: 13px;
+                                        line-height: 23px;
+
+                                        svg {
+                                            margin-left: 8px;
+                                            width: auto;
+                                            height: 35px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
 }

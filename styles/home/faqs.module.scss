@@ -27,6 +27,7 @@
                 padding-right: 20px;
                 cursor: pointer;
                 border-bottom: 1px solid $border-color;
+                padding-bottom: 10px;
 
 
                 svg {
@@ -51,9 +52,245 @@
 
                 .tabContent {
                     padding: 15px 15px 0px 0px;
+                    font-size: 14px;
                 }
             }
 
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .faqSec {
+        .faqTabs {
+            gap: 18px;
+
+            .faqItem {
+                flex: 0 0 calc(50% - 18px);
+                min-height: 50px;
+
+                .tabTitle {
+                    font-size: 18px;
+                    line-height: 26px;
+                    height: 70px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 20px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 15px 15px 0px 0px;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .faqSec {
+        .faqTabs {
+            gap: 18px;
+
+            .faqItem {
+                flex: 0 0 calc(50% - 18px);
+                min-height: 50px;
+
+                .tabTitle {
+                    font-size: 16px;
+                    line-height: 24px;
+                    height: 60px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 18px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .faqSec {
+        .faqTabs {
+            gap: 18px;
+
+            .faqItem {
+                flex: 0 0 calc(50% - 18px);
+                min-height: 50px;
+
+                .tabTitle {
+                    font-size: 16px;
+                    line-height: 24px;
+                    height: 60px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 18px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .faqSec {
+        .faqTabs {
+            gap: 18px;
+
+            .faqItem {
+                flex: 0 0 calc(50% - 18px);
+                min-height: 50px;
+
+                .tabTitle {
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 50px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 15px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(1199px) {
+    .faqSec {
+        .faqTabs {
+            gap: 15px;
+
+            .faqItem {
+                flex: 0 0 calc(50% - 15px);
+                min-height: 45px;
+
+                .tabTitle {
+                    font-size: 13px;
+                    line-height: 20px;
+                    height: 45px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 12px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(900px) {
+    .faqSec {
+        .faqTitle {
+            position: sticky;
+            top: 60px;
+        }
+
+        .faqTabs {
+            gap: 15px;
+
+            .faqItem {
+                flex: 0 0 calc(100% - 0px);
+                min-height: 45px;
+
+                .tabTitle {
+                    font-size: 13px;
+                    line-height: 20px;
+                    height: 45px;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 12px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include media-query(666px) {
+    .faqSec {
+        .faqTitle {
+            position: relative;
+            top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .faqTabs {
+            gap: 15px;
+
+            .faqItem {
+                flex: 0 0 calc(100% - 0px);
+                min-height: auto;
+
+                .tabTitle {
+                    font-size: 14px;
+                    line-height: 22px;
+                    height: auto;
+                    padding-right: 20px;
+
+                    svg {
+                        height: 12px;
+                    }
+                }
+
+                &.active {
+                    .tabContent {
+                        padding: 12px 12px 0px 0px;
+                        font-size: 13px;
+                    }
+                }
+
+            }
         }
     }
 }

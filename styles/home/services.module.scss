@@ -108,19 +108,27 @@
 @include media-query(1799px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(33.33% - 0px);
                 max-width: calc(33.33% - 0px);
-                @include padding(40px, 30px);
+                @include padding(20px, 30px, 30px);
 
                 .itemIcon {
                     margin-bottom: 20px;
+
+                    svg {
+                        height: 50px;
+                        width: auto
+                    }
                 }
 
                 .itemTxt {
                     a {
-                        @include font-size(15px);
+                        @include font-size(16px);
                     }
+
                 }
             }
         }
@@ -130,24 +138,38 @@
 @include media-query(1599px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(33.33% - 0px);
                 max-width: calc(33.33% - 0px);
-                @include padding(35px, 35px);
+                @include padding(20px, 20px, 20px);
 
                 .itemIcon {
                     margin-bottom: 20px;
 
                     svg {
-                        height: 40px;
-                        width: auto;
+                        height: 45px;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
+                    }
+
                     a {
                         @include font-size(14px);
+
+                        svg {
+                            height: 8px;
+                            width: auto;
+                        }
                     }
+
                 }
             }
         }
@@ -157,24 +179,38 @@
 @include media-query(1399px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(33.33% - 0px);
                 max-width: calc(33.33% - 0px);
-                @include padding(30px, 30px);
+                @include padding(20px, 20px, 20px);
 
                 .itemIcon {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     svg {
                         height: 40px;
-                        width: auto;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
-                    a {
-                        @include font-size(14px);
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
                     }
+
+                    a {
+                        @include font-size(13px);
+
+                        svg {
+                            height: 8px;
+                            width: auto;
+                        }
+                    }
+
                 }
             }
         }
@@ -184,24 +220,38 @@
 @include media-query(1299px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(33.33% - 0px);
                 max-width: calc(33.33% - 0px);
-                @include padding(30px, 30px);
+                @include padding(20px, 20px, 20px);
 
                 .itemIcon {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     svg {
-                        height: 40px;
-                        width: auto;
+                        height: 38px;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
-                    a {
-                        @include font-size(14px);
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
                     }
+
+                    a {
+                        @include font-size(13px);
+
+                        svg {
+                            height: 8px;
+                            width: auto;
+                        }
+                    }
+
                 }
             }
         }
@@ -211,24 +261,38 @@
 @include media-query(1199px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(33.33% - 0px);
                 max-width: calc(33.33% - 0px);
-                @include padding(30px, 25px);
+                @include padding(15px, 15px, 15px);
 
                 .itemIcon {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     svg {
-                        height: 35px;
-                        width: auto;
+                        height: 38px;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
+                    }
+
                     a {
                         @include font-size(13px);
+
+                        svg {
+                            height: 7px;
+                            width: auto;
+                        }
                     }
+
                 }
             }
         }
@@ -238,44 +302,38 @@
 @include media-query(900px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
-                flex: 0 0 calc(50% - 0px);
-                max-width: calc(50% - 0px);
-                @include padding(30px, 40px);
+                flex: 0 0 calc(33.33% - 0px);
+                max-width: calc(33.33% - 0px);
+                @include padding(15px, 15px, 15px);
 
                 .itemIcon {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     svg {
-                        height: 35px;
-                        width: auto;
+                        height: 38px;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
+                    }
+
                     a {
                         @include font-size(13px);
+
+                        svg {
+                            height: 7px;
+                            width: auto;
+                        }
                     }
-                }
 
-                &:nth-child(2),
-                &:nth-child(4),
-                &:last-child {
-                    border-right: 0px;
-                }
-
-                &:nth-child(3) {
-                    border-right: 1px solid;
-                }
-
-                &:nth-child(4),
-                &:nth-child(5) {
-                    border-bottom: 1px solid;
-                }
-
-                &:nth-child(5),
-                &:last-child {
-                    border-bottom: 0px;
                 }
             }
         }
@@ -286,31 +344,45 @@
 @include media-query(666px) {
     .servicesSec {
         .serviceContainer {
+            margin-top: 20px;
+
             .servicesItem {
                 flex: 0 0 calc(100% - 0px);
                 max-width: calc(100% - 0px);
-                @include padding(30px, 40px);
-                border-bottom: 1px solid !important;
-                border-right: 0px !important;
+                @include padding(15px, 15px, 15px);
+                border-right: 0px;
 
                 .itemIcon {
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
 
                     svg {
-                        height: 35px;
-                        width: auto;
+                        height: 38px;
+                        width: auto
                     }
                 }
 
                 .itemTxt {
+
+                    h3,
+                    p {
+                        margin-bottom: 10px
+                    }
+
                     a {
                         @include font-size(13px);
+
+                        svg {
+                            height: 7px;
+                            width: auto;
+                        }
                     }
+
                 }
 
-
+                &:nth-child(7),
+                &:nth-child(8),
                 &:last-child {
-                    border-bottom: 0px !important;
+                    border-bottom: 1px solid $border-color;
                 }
             }
         }

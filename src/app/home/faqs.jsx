@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Row, Container, Col } from 'react-bootstrap'
 import { useState } from 'react'
 import styles from "@/styles/home/faqs.module.scss"
-import { SubMenuIcon } from '@/src/app/app-constants'
+import { SubMenuIcon, TitleBorderLine } from '@/src/app/app-constants'
 
 const FAQs = [
     {
@@ -61,12 +61,14 @@ const Faqs = () => {
         <section className={`ptb-100 ${styles.faqSec}`}>
             <Container>
                 <Row>
-                    <Col lg={4}>
-                        <h2>Answers To Frequently Asked Questions</h2>
-                        <p>In addition to the creative direction, we design Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
-                        <Link href="#" className="commonClass">Let’s Discuss</Link>
+                    <Col lg={4} md={6}>
+                        <div className={styles.faqTitle}>
+                            <h2>Answers To Frequently Asked <span className="lastHeading">Questions<TitleBorderLine /></span></h2>
+                            <p>In addition to the creative direction, we design Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
+                            <Link href="#" className="commonClass">Let’s Discuss</Link>
+                        </div>
                     </Col>
-                    <Col lg={8}>
+                    <Col lg={8} md={6}>
                         <div className={styles.faqTabs}>
                             {FAQs.map((faq, index) => (
                                 <div className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`} key={index}>

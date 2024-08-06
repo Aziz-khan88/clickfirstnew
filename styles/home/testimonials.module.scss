@@ -9,3 +9,46 @@
         color: $white-color;
     }
 }
+
+@include media-query(1799px) {
+    .testimonialSec {
+        margin-bottom: 80px;
+    }
+}
+
+
+@include media-query(1599px) {
+    .testimonialSec {
+        margin-bottom: 70px;
+    }
+}
+
+@include media-query(1399px) {
+    .testimonialSec {
+        margin-bottom: 50px;
+    }
+}
+
+@include media-query(1299px) {
+    .testimonialSec {
+        margin-bottom: 50px;
+    }
+}
+
+@include media-query(1199px) {
+    .testimonialSec {
+        margin-bottom: 40px;
+    }
+}
+
+@include media-query(900px) {
+    .testimonialSec {
+        margin-bottom: 30px;
+    }
+}
+
+@include media-query(666px) {
+    .testimonialSec {
+        margin-bottom: 30px;
+    }
+}

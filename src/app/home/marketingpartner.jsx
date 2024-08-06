@@ -20,7 +20,7 @@ const MarketingPartner = () => {
             <Container>
                 <Row>
                     <Col xl={6} lg={6} className="text-center m-auto">
-                        <h2>Our <span className="lastHeading">Marketing <TitleBorderLine /></span> Partners</h2>
+                        <h2>Our Marketing <span className="lastHeading">Partners<TitleBorderLine /></span></h2>
                         <p>In addition to the creative direction, we design our PowerPoint Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
                     </Col>
                 </Row>
@@ -76,7 +76,7 @@ const MarketingPartner = () => {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     )
 }
 

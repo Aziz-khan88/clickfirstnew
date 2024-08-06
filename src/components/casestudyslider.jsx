@@ -10,7 +10,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 const CaseStudySlider = (props) => {
     const { slides, options } = props;
-    const [emblaRef, embla] = useEmblaCarousel(options, [ClassNames(), Autoplay()]);
+    const [emblaRef, embla] = useEmblaCarousel(options, [ClassNames()]);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const prevButtonHandler = () => {

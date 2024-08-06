@@ -66,7 +66,7 @@ const Platforms = () => {
             <Container>
                 <Row>
                     <Col xxl={11} xl={12} lg={12} className="m-auto text-center">
-                        <h2><span className="lastHeading">Platforms <TitleBorderLine /></span> We Work With</h2>
+                        <h2>Platforms <span className="lastHeading">We Work With<TitleBorderLine /></span> </h2>
                         <div className={styles.platfromBox}>
                             {data.map((item, index) => (
                                 <div className={styles.platfromItem} key={index}>

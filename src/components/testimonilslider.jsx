@@ -43,7 +43,7 @@ const TestimonilSlider = (props) => {
                         <div className={styles.embla__slide} key={index}>
                             <div className={styles.testimonialBox}>
                                 <Row className='h-100'>
-                                    <Col lg={6} className="mt-auto">
+                                    <Col lg={6} md={6} className="mt-auto">
                                         <div className={styles.itemMain}>
                                             <div className={`${styles.txtItem} ${currentIndex === index ? 'animatedItem' : ''}`}>
                                                 Our Result-Oriented SEO Services Come At The Most Sensible Rates Ever. We Propose Multiple Pricing SEO Packages To Best Suit Your Varying Budgets And Business Goals.
@@ -60,7 +60,7 @@ const TestimonilSlider = (props) => {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col lg={6} className="my-auto">
+                                    <Col lg={6} md={6} className="my-auto">
                                         <div className={styles.testimonialImg}>
                                             <Image src={item.img} alt={item?.name} width={812} height={440} className={`${currentIndex === index ? 'zoom-out' : ''}`} />
                                             <div className={styles.playBtn} onClick={() => handleSlideClick(item.videoUrl)}><PlayButton /></div>

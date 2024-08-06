@@ -18,7 +18,7 @@ const Competitors = () => {
                         <p>Our team of seasoned creative designers knows how to develop content that stops scrollers in their tracks. Whether you’re looking to showcase a new product, highlight your company culture, or simply stay top-of-mind with your followers, we have the skills and expertise to create assets that spark curiosity, drive engagement, and deliver measurable results for your brand.</p>
                         <p>But it’s not just about pretty pictures - our approach is rooted in data and analytics. We’ll work closely with you to understand your audience, identify the platforms and content formats that resonate best, and continuously optimize your campaigns for maximum impact. By partnering with Click First SMM, you’ll be able to elevate your brand’s presence, boost awareness, and ultimately drive tangible growth for your business.</p>
                         <p>So why settle for boring, ineffective creatives when you can up-level your social media game with the power of captivating visuals? Contact Click First SMM today and start crafting a content strategy that will take your brand to new heights. Get ready to say goodbye to creatives and hello to social media success!</p>
-                        <Link href="#" className={styles.buttonClass}>Get a Free Quote</Link>
+                        <Link href="#" className="commonClass">Get a Free Quote</Link>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
                         <Image src={CompetitorsImg} alt="Click-First" />

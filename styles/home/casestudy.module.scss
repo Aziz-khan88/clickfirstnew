@@ -106,3 +106,390 @@
     }
 
 }
+
+@include media-query(1799px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 80px
+        }
+
+        .caseBox {
+            height: 720px;
+            border-radius: 20px;
+            padding: 30px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 30px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 40px;
+
+                .statsItem {
+                    padding: 0px 40px;
+
+                    .points {
+                        font-size: 40px;
+                        line-height: 40px;
+
+                        svg {
+                            height: 26px;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(1599px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 60px
+        }
+
+        .caseBox {
+            height: 630px;
+            border-radius: 15px;
+            padding: 25px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 30px;
+
+                .statsItem {
+                    padding: 0px 35px;
+
+                    .points {
+                        font-size: 35px;
+                        line-height: 35px;
+
+                        svg {
+                            height: 24px;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(1399px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 60px
+        }
+
+        .caseBox {
+            height: 610px;
+            border-radius: 15px;
+            padding: 20px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 30px;
+
+                .statsItem {
+                    padding: 0px 30px;
+
+                    .points {
+                        font-size: 32px;
+                        line-height: 32px;
+
+                        svg {
+                            height: 22px;
+                        }
+                    }
+
+                    h6 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(1299px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 50px
+        }
+
+        .caseBox {
+            height: 530px;
+            border-radius: 12px;
+            padding: 15px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 30px;
+
+                .statsItem {
+                    padding: 0px 25px;
+
+                    .points {
+                        font-size: 25px;
+                        line-height: 25px;
+                        margin-bottom: 0px;
+
+                        svg {
+                            height: 18px
+                        }
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(1199px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 50px
+        }
+
+        .caseBox {
+            height: 520px;
+            border-radius: 10px;
+            padding: 15px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 20px;
+
+                .statsItem {
+                    padding: 0px 25px;
+
+                    .points {
+                        font-size: 22px;
+                        line-height: 22px;
+                        margin-bottom: 0px;
+
+                        svg {
+                            height: 18px
+                        }
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(900px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 50px
+        }
+
+        .caseBox {
+            height: auto;
+            border-radius: 10px;
+            padding: 15px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 20px;
+
+                .statsItem {
+                    padding: 0px 25px;
+
+                    .points {
+                        font-size: 22px;
+                        line-height: 22px;
+                        margin-bottom: 0px;
+
+                        svg {
+                            height: 18px
+                        }
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-query(666px) {
+    .caseStudy {
+        h2 {
+            margin-bottom: 50px
+        }
+
+        .caseBox {
+            height: auto;
+            border-radius: 10px;
+            padding: 15px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            .imgBox {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            .contentBox {
+                p {
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .statsBox {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .statsItem {
+                    padding: 10px 10px;
+                    flex: 0 0 calc(50% - 10px);
+                    border: 1px solid $border-color;
+                    border-radius: 5px;
+
+
+
+                    .points {
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin-bottom: 0px;
+                        align-items: start;
+
+                        svg {
+                            height: 18px
+                        }
+
+
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+
+                    &:first-child {
+                        padding-left: 10px;
+                    }
+
+                    &:last-child {
+                        padding-right: 10px;
+                        border-right: 1px solid $border-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
