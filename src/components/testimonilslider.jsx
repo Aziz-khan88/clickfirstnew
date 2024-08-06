@@ -10,7 +10,7 @@ import VideoModal from '@/src/components/videomodal';
 
 const TestimonilSlider = (props) => {
     const { slides, options } = props;
-    const [emblaRef, embla] = useEmblaCarousel(options, [Autoplay(), Fade()]);
+    const [emblaRef, embla] = useEmblaCarousel(options, [Fade(), Autoplay()]);
     const [videoUrl, setvideoUrl] = useState("");
     const [modalShow, setModalShow] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -89,6 +89,10 @@ const TestimonilSlider = (props) => {
                         className={`embla__dot ${currentIndex === index ? 'active' : ''}`}
                         onClick={() => embla && embla.scrollTo(index)}
                     >
+                        {currentIndex === index ?
+                            <p className='embla__bar__active'></p>
+                            : ''
+                        }
                     </div>
                 ))}
             </div>

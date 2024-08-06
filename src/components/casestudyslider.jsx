@@ -10,7 +10,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 const CaseStudySlider = (props) => {
     const { slides, options } = props;
-    const [emblaRef, embla] = useEmblaCarousel(options, [ClassNames()]);
+    const [emblaRef, embla] = useEmblaCarousel(options, [ClassNames(), Autoplay()]);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const prevButtonHandler = () => {
@@ -84,6 +84,10 @@ const CaseStudySlider = (props) => {
                         className={`embla__dot ${selectedIndex === index ? 'active' : ''}`}
                         onClick={() => embla && embla.scrollTo(index)}
                     >
+                        {selectedIndex === index ?
+                            <p className='embla__bar__active'></p>
+                            : ''
+                        }
                     </div>
                 ))}
             </div>

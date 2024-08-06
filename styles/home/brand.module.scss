@@ -40,7 +40,7 @@
     }
 
     .influenceVideo {
-        background-image: url("../../public/home/brands/Influencer_frame.webp");
+        background-image: url(../../public/home/brands/Influencer_frame.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
@@ -269,7 +269,6 @@
 
     }
 }
-
 
 @include media-query(666px) {
     .BrandSec {
