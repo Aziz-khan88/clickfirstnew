@@ -11,7 +11,7 @@ const Footer = () => {
                     <Row>
                         <Col xl={3} lg={3} md={4}>
                             <div className={styles.footerLogo}>
-                                <Link href="">
+                                <Link href="/" aria-label="Main Page" >
                                     <ClickFirstLogo />
                                 </Link>
                             </div>
