@@ -35,15 +35,15 @@ const MarketingPartner = () => {
     useEffect(() => {
         const partnerInterval = setInterval(() => {
             setPartnerIndex((prevIndex) => (prevIndex + 1) % Partner.length);
-        }, 9000);
+        }, 2000);
 
         const awardsInterval = setInterval(() => {
             setAwardsIndex((prevIndex) => (prevIndex + 1) % Awards.length);
-        }, 9000);
+        }, 2000);
 
         const recognitionInterval = setInterval(() => {
             setRecognitionIndex((prevIndex) => (prevIndex + 1) % Recognition.length);
-        }, 9000);
+        }, 2000);
 
         return () => {
             clearInterval(partnerInterval);
