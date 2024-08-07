@@ -39,8 +39,6 @@ const Brand = () => {
     }, [activevideoUrl]);
 
 
-
-
     return (
         <section className={`ptb-100 ${styles.BrandSec}`}>
             <Container className="h-100">

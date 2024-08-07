@@ -71,7 +71,7 @@ const MarketingPartner = () => {
                                             key={index}
                                             className={`${styles.logo} ${index === partnerIndex ? styles.show : styles.hide}`}
                                         >
-                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={70} width={183} />
+                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={130} width={340} />
                                         </div>
                                     ))}
                                 </div>
@@ -86,7 +86,7 @@ const MarketingPartner = () => {
                                             key={index}
                                             className={`${styles.logo} ${styles.awardLogo} ${index === awardsIndex ? styles.show : styles.hide}`}
                                         >
-                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={116} width={116} />
+                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={130} width={340} />
                                         </div>
                                     ))}
                                 </div>
