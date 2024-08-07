@@ -22,9 +22,9 @@
         }
     }
 
-    // p {
-    //     text-align: justify;
-    // }
+    p {
+        text-align: justify;
+    }
 
     .buttonClass {
         @include button($primary-color, $white-color, $primary-color, 16px);

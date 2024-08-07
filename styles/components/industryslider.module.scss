@@ -144,6 +144,48 @@
 
     }
 
+    .embla__button__container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                width: 30px;
+                height: 30px;
+
+
+                path {
+                    fill: $black-color;
+                }
+            }
+
+            &.embla__prev {
+                font-size: 10px;
+                transform: rotate(180deg);
+            }
+
+            &.embla__next {
+                font-size: 10px;
+            }
+
+            &.disabled {
+                svg {
+                    path {
+                        fill: $disabled-color;
+                    }
+                }
+            }
+        }
+
+
+    }
 
 }
 

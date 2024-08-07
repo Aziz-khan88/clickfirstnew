@@ -1,4 +1,3 @@
-
 "use client"
 import { React, useState, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -14,6 +13,7 @@ import OdyssEyeLixir from "media/home/brands/@odysseyelixir.webp"
 import Cece_Barnes from "media/home/brands/@cece_barnes.webp"
 import JuliAkhara from "media/home/brands/@juliakhara.webp"
 import { CarouselArrow } from '@/src/app/app-constants'
+
 const data = [
     {
         title: "@kyleecampbell",
@@ -107,6 +107,11 @@ const BrandCarousel = ({ onVideoSelect }) => {
         return () => clearInterval(interval);
     }, [embla, onVideoSelect]);
 
+    const handleSlideClick = (index, videoUrl) => {
+        setActiveIndex(index);
+        onVideoSelect(videoUrl);
+        embla.scrollTo(index);
+    };
 
     const prevButtonHandler = () => {
         if (embla) embla.scrollPrev();
@@ -123,7 +128,7 @@ const BrandCarousel = ({ onVideoSelect }) => {
                     <div
                         className={styles.embla__slide}
                         key={index}
-                    //  onClick={() => handleSlideClick(index, item.videoUrl)}
+                        onClick={() => handleSlideClick(index, item.videoUrl)}
                     >
                         <div className={styles.itemBrand} >
                             <div style={{ backgroundImage: `url(${item.img})` }} className={`${styles.itemImg} ${activeIndex === index ? `${styles.active}` : ''}`}>

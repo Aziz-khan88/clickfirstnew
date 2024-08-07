@@ -248,7 +248,10 @@ const Industries = () => {
                 <Row>
                     <Col xxl={12} xl={12} lg={12} className="m-auto p-0">
                         <IndustriesSlider slides={SLIDES} options={OPTIONS} />
-                        <Link href="#" className="commonClass marginAuto" aria-label="Let’s Discuss Your Project">Let’s Discuss Your Project</Link>
+                        <div className="btnTow marginAuto">
+                            <Link href="#" className="buttonStyle" aria-label="Let’s Discuss Your Project">Let’s Discuss Your Project</Link>
+                            <Link href="#" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
+                        </div>
                     </Col>
                 </Row>
             </Container>

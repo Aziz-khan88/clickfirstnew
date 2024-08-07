@@ -153,9 +153,7 @@ body {
             transition: background-color 0.3s ease;
         }
 
-        &.marginAuto {
-            margin: 30px auto 0px;
-        }
+
     }
 
     .btnTow {
@@ -163,7 +161,7 @@ body {
         gap: 10px;
 
         .buttonStyle {
-            background: $secondary-color;
+            background: $black-color;
             cursor: pointer;
             font-size: 16px;
             height: 45px;
@@ -178,7 +176,7 @@ body {
             color: $white-color;
 
             &:hover {
-                background: $black-color;
+                background: $secondary-color;
                 transition: background-color 0.3s ease;
             }
 
@@ -194,6 +192,36 @@ body {
             }
 
 
+        }
+
+        &.marginAuto {
+            margin: 30px auto 0px;
+            justify-content: center;
+
+            .buttonStyle {
+                background: $primary-color;
+                color: $white-color;
+
+                &:hover {
+                    background: $secondary-color;
+                    transition: background-color 0.3s ease;
+                }
+
+                &.borderStyle {
+                    background: transparent;
+                    border: 2px solid $black-color;
+                    color: $black-color;
+
+                    &:hover {
+                        background: $secondary-color;
+                        border-color: $secondary-color;
+                        transition: background-color 0.3s ease;
+                        color: $white-color;
+                    }
+                }
+
+
+            }
         }
 
     }
