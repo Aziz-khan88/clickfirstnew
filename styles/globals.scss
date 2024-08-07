@@ -1,7 +1,5 @@
 @import './variables.module.scss';
 
-
-
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -41,6 +39,7 @@ body {
     }
 
     img {
+        width: auto;
         max-width: 100%;
         height: auto;
     }
@@ -303,7 +302,6 @@ body {
         }
     }
 }
-
 
 .embla.caseslider {
     margin: auto;

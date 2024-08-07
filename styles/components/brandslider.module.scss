@@ -7,7 +7,7 @@
     .embla__container {
         display: flex;
         width: 100%;
-        justify-content: start;
+        justify-content: flex-start;
         margin-top: 50px;
 
         .embla__slide {
@@ -75,7 +75,7 @@
 
     .embla__button__container {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 15px;
         margin-top: 15px;
 

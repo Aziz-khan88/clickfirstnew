@@ -2,19 +2,56 @@
 import { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/home/marketingpartner.module.scss"
-import { ClutchLogo, MetaLogo, SEOLogo, TitleBorderLine } from '@/src/app/app-constants'
+import { TitleBorderLine } from '@/src/app/app-constants'
+import Partner01 from "media/home/marketingpartner/Partner01.webp"
+import Partner02 from "media/home/marketingpartner/Partner02.webp"
+import Partner03 from "media/home/marketingpartner/Partner03.webp"
+import Partner04 from "media/home/marketingpartner/Partner04.webp"
+import Partner05 from "media/home/marketingpartner/Partner05.webp"
+import Awards01 from "media/home/marketingpartner/Awards01.webp"
+import Awards02 from "media/home/marketingpartner/Awards02.webp"
+import Awards03 from "media/home/marketingpartner/Awards03.webp"
+import Awards04 from "media/home/marketingpartner/Awards04.webp"
+import Awards05 from "media/home/marketingpartner/Awards05.webp"
+import Awards06 from "media/home/marketingpartner/Awards06.webp"
+import Awards07 from "media/home/marketingpartner/Awards07.webp"
+import Awards08 from "media/home/marketingpartner/Awards08.webp"
+import Awards09 from "media/home/marketingpartner/Awards09.webp"
+import Recognition01 from "media/home/marketingpartner/Recognition01.webp"
+import Recognition02 from "media/home/marketingpartner/Recognition02.webp"
+import Recognition03 from "media/home/marketingpartner/Recognition03.webp"
+import Recognition04 from "media/home/marketingpartner/Recognition04.webp"
+import Image from 'next/image'
 
 const MarketingPartner = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const logos = [<MetaLogo key="meta" />, <ClutchLogo key="clutch" />];
+    const [partnerIndex, setPartnerIndex] = useState(0);
+    const [awardsIndex, setAwardsIndex] = useState(0);
+    const [recognitionIndex, setRecognitionIndex] = useState(0);
+
+    const Partner = [Partner01, Partner02, Partner03, Partner04, Partner05];
+    const Awards = [Awards01, Awards02, Awards03, Awards04, Awards05, Awards06, Awards07, Awards08, Awards09];
+    const Recognition = [Recognition01, Recognition02, Recognition03, Recognition04];
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length);
-        }, 2000); // Change logo every 2 seconds
+        const partnerInterval = setInterval(() => {
+            setPartnerIndex((prevIndex) => (prevIndex + 1) % Partner.length);
+        }, 9000);
 
-        return () => clearInterval(interval);
-    }, [logos.length]);
+        const awardsInterval = setInterval(() => {
+            setAwardsIndex((prevIndex) => (prevIndex + 1) % Awards.length);
+        }, 9000);
+
+        const recognitionInterval = setInterval(() => {
+            setRecognitionIndex((prevIndex) => (prevIndex + 1) % Recognition.length);
+        }, 9000);
+
+        return () => {
+            clearInterval(partnerInterval);
+            clearInterval(awardsInterval);
+            clearInterval(recognitionInterval);
+        };
+    }, [Partner.length, Awards.length, Recognition.length]);
+
     return (
         <section className={`${styles.marketingPartner} ptb-100`}>
             <Container>
@@ -29,12 +66,12 @@ const MarketingPartner = () => {
                         <div className={styles.marketingPartnerBox}>
                             <div className={styles.marketingBoxItem}>
                                 <div className={styles.boxIcon}>
-                                    {logos.map((logo, index) => (
+                                    {Partner.map((logo, index) => (
                                         <div
                                             key={index}
-                                            className={`${styles.logo} ${index === currentIndex ? styles.show : styles.hide}`}
+                                            className={`${styles.logo} ${index === partnerIndex ? styles.show : styles.hide}`}
                                         >
-                                            {logo}
+                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={70} width={183} />
                                         </div>
                                     ))}
                                 </div>
@@ -44,12 +81,12 @@ const MarketingPartner = () => {
                             </div>
                             <div className={styles.marketingBoxItem}>
                                 <div className={styles.boxIcon}>
-                                    {logos.map((logo, index) => (
+                                    {Awards.map((logo, index) => (
                                         <div
                                             key={index}
-                                            className={`${styles.logo} ${index === currentIndex ? styles.show : styles.hide}`}
+                                            className={`${styles.logo} ${styles.awardLogo} ${index === awardsIndex ? styles.show : styles.hide}`}
                                         >
-                                            {logo}
+                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={116} width={116} />
                                         </div>
                                     ))}
                                 </div>
@@ -59,12 +96,12 @@ const MarketingPartner = () => {
                             </div>
                             <div className={styles.marketingBoxItem}>
                                 <div className={styles.boxIcon}>
-                                    {logos.map((logo, index) => (
+                                    {Recognition.map((logo, index) => (
                                         <div
                                             key={index}
-                                            className={`${styles.logo} ${index === currentIndex ? styles.show : styles.hide}`}
+                                            className={`${styles.logo} ${index === recognitionIndex ? styles.show : styles.hide}`}
                                         >
-                                            {logo}
+                                            <Image src={logo.src} alt={`Recognition ${index}`} width={161} height={70} />
                                         </div>
                                     ))}
                                 </div>

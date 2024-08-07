@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "@/styles/home/brand.module.scss";
 import Link from "next/link";
 import BrandCarousel from "@/src/components/brandcarosusel";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Youtube from 'media/home/brands/icons/youtube.webp'
 import Facebook from 'media/home/brands/icons/facebook.webp'
 import Instagram from 'media/home/brands/icons/instagram.webp'
@@ -51,7 +51,7 @@ const Brand = () => {
                         </h2>
                         <p>Boost your brand’s visibility with influencer marketing from Click First SMM. Our expert strategists excel in creating genuine, impactful partnerships with top niche influencers. By tapping into their loyal followers and leveraging their trust, we’ll help you reach your target audience, build credibility, and drive a surge in website traffic and conversions.</p>
                         <p>Eliminate the guesswork with Click First SMM’s data-driven influencer marketing approach. We’ll connect you with the ideal influencers, design engaging campaigns, and deliver measurable results that elevate your business. Amplify your reach and enhance your brand with Click First SMM’s influencer marketing expertise.</p>
-                        <Link href="#" className="commonClass" aria-label="Get a Free Quote">Get a Free Quote</Link>
+                        <Link href="#" className="commonClass">Get a Free Quote</Link>
                         <BrandCarousel onVideoSelect={handleVideoSelect} />
                     </Col>
                     <Col xxl={5} xl={5} lg={5} className='my-auto text-center'>

@@ -1,6 +1,6 @@
 
 "use client"
-import { React, useState, useEffect, useCallback } from 'react'
+import { React, useState, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "@/styles/components/brandslider.module.scss"
@@ -13,7 +13,7 @@ import PbadvanceDaeshetics from "media/home/brands/@pbadvancedaesthetics.webp"
 import OdyssEyeLixir from "media/home/brands/@odysseyelixir.webp"
 import Cece_Barnes from "media/home/brands/@cece_barnes.webp"
 import JuliAkhara from "media/home/brands/@juliakhara.webp"
-import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
+import { CarouselArrow } from '@/src/app/app-constants'
 const data = [
     {
         title: "@kyleecampbell",
