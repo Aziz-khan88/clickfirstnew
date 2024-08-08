@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import ClassNames from "embla-carousel-class-names";
 import styles from "@/styles/home/casestudy.module.scss";
@@ -8,8 +8,29 @@ import Link from "next/link";
 import { ArrowYellow, CarouselArrow } from "@/src/app/app-constants";
 import Autoplay from "embla-carousel-autoplay";
 
+const useInnerCarousel = (isActive, options) => {
+    const [emblaRefImg, emblaInner] = useEmblaCarousel(
+        options,
+        [Autoplay({ delay: 1000 })]
+    );
+
+    useEffect(() => {
+        if (emblaInner) {
+            emblaInner.autoplay?.stop();
+            if (isActive) {
+                emblaInner.autoplay?.start();
+            }
+        }
+    }, [isActive, emblaInner]);
+
+    return emblaRefImg;
+};
+
 const CaseStudySlider = ({ slides, options }) => {
-    const [emblaRef, embla] = useEmblaCarousel(options, [ClassNames(), Autoplay({ delay: 4000 })]);
+    const [emblaRef, embla] = useEmblaCarousel(
+        options,
+        [ClassNames(), Autoplay({ delay: 3000 })]
+    );
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     useEffect(() => {
@@ -29,16 +50,8 @@ const CaseStudySlider = ({ slides, options }) => {
                 <div className="embla__container">
                     {slides.map((item, index) => {
                         const isActive = index === selectedIndex;
-                        const [emblaRefImg, emblaInner] = useEmblaCarousel(
-                            options,
-                            isActive ? [Autoplay({ delay: 1000 })] : []
-                        );
-
-                        useEffect(() => {
-                            if (isActive && emblaInner) {
-                                emblaInner.reInit();
-                            }
-                        }, [isActive, emblaInner]);
+                        // eslint-disable-next-line react-hooks/rules-of-hooks
+                        const emblaRefImg = useInnerCarousel(isActive, options);
 
                         return (
                             <div className="embla__slide embla__class-names" key={index}>
@@ -49,7 +62,12 @@ const CaseStudySlider = ({ slides, options }) => {
                                                 <div className="embla__container1">
                                                     {item.img.map((imges, imgIndex) => (
                                                         <div className="embla__slide1" key={imgIndex}>
-                                                            <Image src={imges.src} alt="Case Study Image" width={350} height={250} />
+                                                            <Image
+                                                                src={imges.src}
+                                                                alt="Case Study Image"
+                                                                width={350}
+                                                                height={250}
+                                                            />
                                                         </div>
                                                     ))}
                                                 </div>
@@ -60,8 +78,12 @@ const CaseStudySlider = ({ slides, options }) => {
                                         <h5>{item.title}</h5>
                                         <p>{item.txt}</p>
                                         <div className="btnTow">
-                                            <Link href="#" className="buttonStyle" aria-label="Read Case Study">Read Case Study</Link>
-                                            <Link href="tel:346-299-2202" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
+                                            <Link href="#" className="buttonStyle" aria-label="Read Case Study">
+                                                Read Case Study
+                                            </Link>
+                                            <Link href="tel:346-299-2202" className="buttonStyle borderStyle" aria-label="Call Now">
+                                                Call Now: 346-299-2202
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className={styles.statsBox}>
