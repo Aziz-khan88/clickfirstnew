@@ -29,7 +29,7 @@ const useInnerCarousel = (isActive, options) => {
 const CaseStudySlider = ({ slides, options }) => {
     const [emblaRef, embla] = useEmblaCarousel(
         options,
-        [ClassNames(), Autoplay({ delay: 3000 })]
+        [ClassNames(), Autoplay({ delay: 4000 })]
     );
     const [selectedIndex, setSelectedIndex] = useState(0);
 
