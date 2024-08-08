@@ -365,6 +365,29 @@ body {
                     filter: grayscale(1);
                     opacity: 0.5;
                 }
+
+                .embla1 {
+                    .embla__viewport1 {
+                        overflow: hidden;
+
+                        .embla__container1 {
+                            display: flex;
+                            touch-action: pan-y pinch-zoom;
+                            margin-left: calc(15px * -1);
+
+                            .embla__slide1 {
+                                transform: translate3d(0, 0, 0);
+                                flex: 0 0 33.33%;
+                                min-width: 0;
+                                padding-left: 15px;
+                            }
+                        }
+
+
+                    }
+
+
+                }
             }
         }
     }
@@ -430,7 +453,7 @@ body {
                     width: 100%;
                     height: 3px;
                     background-color: $primary-color;
-                    animation: fillBar 3.4s forwards;
+                    animation: fillBar 4.4s forwards;
                 }
 
                 @keyframes fillBar {
@@ -1032,6 +1055,29 @@ body {
                 .embla__slide {
                     flex: 0 0 100%;
                     padding-left: 15px;
+
+                    .embla1 {
+                        .embla__viewport1 {
+                            overflow: hidden;
+
+                            .embla__container1 {
+                                display: flex;
+                                touch-action: pan-y pinch-zoom;
+                                margin-left: calc(15px * -1);
+
+                                .embla__slide1 {
+                                    transform: translate3d(0, 0, 0);
+                                    flex: 0 0 100%;
+                                    min-width: 0;
+                                    padding-left: 15px;
+                                }
+                            }
+
+
+                        }
+
+
+                    }
                 }
             }
         }
@@ -1042,6 +1088,7 @@ body {
         .embla__button__container {
             gap: 10px;
             margin-top: 50px;
+            justify-content: center;
 
             div {
                 svg {
