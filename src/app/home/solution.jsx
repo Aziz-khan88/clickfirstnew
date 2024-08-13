@@ -9,7 +9,7 @@ const Solution = () => {
             <Container>
                 <Row>
                     <Col xl={6} lg={6} md={7} className="m-auto text-center">
-                        <h2>Drive <span>Growth</span> with Our Tailored Business <span className="lastHeading">Solutions<TitleBorderLine /></span></h2>
+                        <h2>Drive <span>Business Growth</span> with Our Tailored <span className="lastHeading">Solutions<TitleBorderLine /></span></h2>
 
                     </Col>
                 </Row>
@@ -24,3 +24,4 @@ const Solution = () => {
 }
 
 export default Solution
+

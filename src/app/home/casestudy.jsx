@@ -113,7 +113,7 @@ const CaseStudy = () => {
             <Container>
                 <Row>
                     <Col xl={12} lg={12} md={12} className="m-auto">
-                        <h2 className="text-center">Our <span className="lastHeading">Casestudy<TitleBorderLine /></span></h2>
+                        <h2 className="text-center">Proven Success in <span className="lastHeading">Driving Results<TitleBorderLine /></span></h2>
                         <CaseStudySlider slides={SLIDES} options={OPTIONS} />
                     </Col>
                 </Row>

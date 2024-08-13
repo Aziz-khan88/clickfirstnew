@@ -15,13 +15,13 @@ const Services = () => {
         },
         {
             title: "Social Media Management",
-            txt: "Find people likely to purchase your product or service.",
+            txt: "Efficiently manage your brand’s online presence with strategies that build engagement and loyalty.",
             icon: <ServicesIcon2 />
         }
         ,
         {
             title: "Social Media Advertising",
-            txt: "Collect leads for your business via instant forms, messages, calls, and sign-ups.",
+            txt: "Drive targeted traffic and maximize ROI with precision-focused ad campaigns that capture attention.",
             icon: <ServicesIcon3 />
         },
         {
@@ -62,7 +62,7 @@ const Services = () => {
                 <Row>
                     <Col xl={7} lg={7} md={7} className="m-auto text-center">
                         <h2>What <span>Marketing</span> Opportunities
-                            We Bring To Your <span className="lastHeading">Easy Disposal?<TitleBorderLine /></span></h2>
+                            We Bring To Your <span className="lastHeading">Disposal?<TitleBorderLine /></span></h2>
                     </Col>
                 </Row>
                 <Row>

@@ -20,10 +20,10 @@ const CtaPackage = () => {
                                     Tailored Just for You?</h2>
                                 <div className={styles.btnFlex}>
                                     <div className={styles.btnOne}>
-                                        Booked an Appointment With Our Expert
+                                        Book an Appointment with Our Expert
                                     </div>
                                     <div className={styles.btnTwo}>
-                                        Get a Free Consultation
+                                        Get Free Consultation
                                     </div>
                                 </div>
                             </div>

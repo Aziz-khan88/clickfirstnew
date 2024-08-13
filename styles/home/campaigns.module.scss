@@ -3,6 +3,7 @@
 .campaignsSec {
     @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
     position: relative;
+    overflow: hidden;
 
     &:before {
         content: '';

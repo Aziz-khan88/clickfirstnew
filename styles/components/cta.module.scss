@@ -41,6 +41,10 @@
         font-weight: 600;
         @include font-size(60px);
         margin-bottom: 50px;
+
+        span {
+            color: $secondary-color;
+        }
     }
 
     p {

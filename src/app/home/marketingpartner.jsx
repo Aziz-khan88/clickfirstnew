@@ -57,28 +57,13 @@ const MarketingPartner = () => {
             <Container>
                 <Row>
                     <Col xl={6} lg={6} className="text-center m-auto">
-                        <h2>Our Marketing <span className="lastHeading">Partners<TitleBorderLine /></span></h2>
-                        <p>In addition to the creative direction, we design our PowerPoint Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p>
+                        <h2>Our <span className="lastHeading">Accolades<TitleBorderLine /></span></h2>
+                        {/* <p>In addition to the creative direction, we design our PowerPoint Templates to be quickly deployed and adopted by all. We add many features to make the experience and transition easy.</p> */}
                     </Col>
                 </Row>
                 <Row>
                     <Col xl={10} lg={12} className="text-center m-auto">
                         <div className={styles.marketingPartnerBox}>
-                            <div className={styles.marketingBoxItem}>
-                                <div className={styles.boxIcon}>
-                                    {Partner.map((logo, index) => (
-                                        <div
-                                            key={index}
-                                            className={`${styles.logo} ${index === partnerIndex ? styles.show : styles.hide}`}
-                                        >
-                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={130} width={340} />
-                                        </div>
-                                    ))}
-                                </div>
-                                <h5>Partnerships</h5>
-                                <p>Working alongside great minds is our
-                                    secret to customer success.</p>
-                            </div>
                             <div className={styles.marketingBoxItem}>
                                 <div className={styles.boxIcon}>
                                     {Awards.map((logo, index) => (
@@ -96,6 +81,21 @@ const MarketingPartner = () => {
                             </div>
                             <div className={styles.marketingBoxItem}>
                                 <div className={styles.boxIcon}>
+                                    {Partner.map((logo, index) => (
+                                        <div
+                                            key={index}
+                                            className={`${styles.logo} ${index === partnerIndex ? styles.show : styles.hide}`}
+                                        >
+                                            <Image src={logo.src} alt={`Awards0 ${index}`} height={130} width={340} />
+                                        </div>
+                                    ))}
+                                </div>
+                                <h5>Partnerships</h5>
+                                <p>Working alongside great minds is our
+                                    secret to customer success.</p>
+                            </div>
+                            <div className={styles.marketingBoxItem}>
+                                <div className={styles.boxIcon}>
                                     {Recognition.map((logo, index) => (
                                         <div
                                             key={index}
@@ -105,7 +105,7 @@ const MarketingPartner = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <h5>Recognition</h5>
+                                <h5>Recognitions</h5>
                                 <p>We love hearing from our clients and our
                                     peers. See what they have to say about us.</p>
                             </div>

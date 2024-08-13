@@ -65,7 +65,27 @@
         justify-content: space-evenly;
         align-items: flex-start;
 
+
+
         .usefullLinks {
+            &:first-child {
+                flex: 0 0 25%;
+                padding-left: 50px;
+            }
+
+            &:last-child {
+                flex: 0 0 75%;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        flex: 0 0 50%;
+                    }
+                }
+            }
+
             ul {
                 list-style: none;
                 padding: 0px;
@@ -266,6 +286,24 @@
 
         .footerLinks {
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 25%;
+                    padding-left: 30px;
+                }
+
+                &:last-child {
+                    flex: 0 0 75%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 50%;
+                        }
+                    }
+                }
+
                 ul {
                     li {
                         margin-bottom: 10px;
@@ -351,6 +389,24 @@
 
         .footerLinks {
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 25%;
+                    padding-left: 20px;
+                }
+
+                &:last-child {
+                    flex: 0 0 75%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 50%;
+                        }
+                    }
+                }
+
                 ul {
                     li {
                         margin-bottom: 5px;
@@ -436,6 +492,24 @@
 
         .footerLinks {
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 20%;
+                    padding-left: 0px;
+                }
+
+                &:last-child {
+                    flex: 0 0 80%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 50%;
+                        }
+                    }
+                }
+
                 ul {
                     li {
                         margin-bottom: 5px;
@@ -523,6 +597,24 @@
 
         .footerLinks {
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 40%;
+                    padding-left: 40px;
+                }
+
+                &:last-child {
+                    flex: 0 0 60%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 100%;
+                        }
+                    }
+                }
+
                 ul {
                     li {
                         margin-bottom: 5px;
@@ -609,6 +701,24 @@
 
         .footerLinks {
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 20%;
+                    padding-left: 20px;
+                }
+
+                &:last-child {
+                    flex: 0 0 80%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 50%;
+                        }
+                    }
+                }
+
                 ul {
                     li {
                         margin-bottom: 5px;
@@ -703,9 +813,27 @@
 
         .footerLinks {
             justify-content: flex-start;
-            gap: 50px;
+            gap: 0px;
 
             .usefullLinks {
+                &:first-child {
+                    flex: 0 0 30%;
+                    padding-left: 0px;
+                    padding-right: 50px;
+                }
+
+                &:last-child {
+                    flex: 0 0 70%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            flex: 0 0 100%;
+                        }
+                    }
+                }
 
                 ul {
                     li {

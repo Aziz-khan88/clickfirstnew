@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
 import styles from "../../../styles/layout/navigation.module.scss"
-import { NavIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, ServicesIcon5, ServicesIcon6, SubMenuIcon } from '../app-constants'
+import { NavIcon, Menu01, Menu02, Menu03, Menu04, Menu05, Menu06, Menu07, Menu08, Menu09, SubMenuIcon } from '../app-constants'
 
 
 const Navigation = (props) => {
@@ -57,29 +57,133 @@ const Navigation = (props) => {
                         <div className={styles.subMenu} >
                             <div className={styles.MenuListing}>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="Social Media Management Page"><ServicesIcon1 />Social Media Management</Link>
+                                    <Link href="#" aria-label="Social Media Management Page">
+                                        <div className={styles.icons}>
+                                            <Menu01 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Social Media Marketing
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="Search Engine Optimization Page"><ServicesIcon2 />Search Engine Optimization</Link>
+                                    <Link href="#" aria-label="YouTube Monetization Page">
+                                        <div className={styles.icons}>
+                                            <Menu02 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>YouTube Monetization
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="Influencer Marketing Page"><ServicesIcon3 />Influencer Marketing</Link>
+                                    <Link href="#" aria-label="Social Media Management Page">
+                                        <div className={styles.icons}>
+                                            <Menu03 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Social Media Management
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="Google Ads Page"><ServicesIcon4 />Google Ads</Link>
+                                    <Link href="#" aria-label="Search Engine Optimization Page">
+                                        <div className={styles.icons}>
+                                            <Menu04 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Search Engine Optimization
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="Email Marketing Page"><ServicesIcon5 />Email Marketing</Link>
+                                    <Link href="#" aria-label="Social Media Advertising Page">
+                                        <div className={styles.icons}>
+                                            <Menu05 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Social Media Advertising
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="YouTube Optimization Page"><ServicesIcon6 />YouTube Optimization</Link>
+                                    <Link href="#" aria-label="Google Ads (PPC) Page">
+                                        <div className={styles.icons}>
+                                            <Menu06 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Google Ads (PPC)
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
-                                    <Link href="#" aria-label="YouTube Monetization Page"><ServicesIcon6 />YouTube Monetization</Link>
+                                    <Link href="#" aria-label="Influencer Marketing Page">
+                                        <div className={styles.icons}>
+                                            <Menu07 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Influencer Marketing
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
+                                    <Link href="#" aria-label="Email Marketing Page">
+                                        <div className={styles.icons}>
+                                            <Menu08 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>Email Marketing
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
+                                    <Link href="#" aria-label="YouTube Optimization Page">
+                                        <div className={styles.icons}>
+                                            <Menu09 />
+                                        </div>
+                                        <div className={styles.content}>
+                                            <p>YouTube Optimization
+                                                <span>A social media strategy for Click First involves
+                                                    creating a tailored plan to enhance your brand’s
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-
                     </li>
                     <li>
                         <Link href="#" aria-label="Influencer Marketing Page">Influencer Marketing</Link>
@@ -97,7 +201,7 @@ const Navigation = (props) => {
                         <Link href="#" aria-label="Call Now Page">Call Now: 346-299-2202</Link>
                     </li>
                 </ul>
-            </div>
+            </div >
         </>
     )
 }

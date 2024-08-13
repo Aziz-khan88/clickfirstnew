@@ -1,6 +1,5 @@
 "use client"
 import { Col, Container, Row } from "react-bootstrap"
-import styles from "@/styles/home/industries.module.scss"
 import IndustriesSlider from "@/src/components/industriesslider"
 import IMG01 from "media/home/industries/Cleaning-Services.webp"
 import IMG02 from "media/home/industries/Packaged-Consumer-Goods.webp"
@@ -235,7 +234,7 @@ const SLIDES = [
 ]
 const Industries = () => {
     return (
-        <section className={`ptb-100 ${styles.industriesSec}`}>
+        <section className={`ptb-100 industriesSec`}>
             <Container>
                 <Row>
                     <Col xxl={6} xl={6} lg={8} className="text-center m-auto">
@@ -249,7 +248,7 @@ const Industries = () => {
                     <Col xxl={12} xl={12} lg={12} className="m-auto p-0">
                         <IndustriesSlider slides={SLIDES} options={OPTIONS} />
                         <div className="btnTow marginAuto">
-                            <Link href="#" className="buttonStyle" aria-label="Let’s Discuss Your Project">Let’s Discuss Your Project</Link>
+                            <Link href="#" className="buttonStyle" aria-label="Let’s Discuss Your Project">Discover Our Impact Across Industries</Link>
                             <Link href="#" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
                         </div>
                     </Col>

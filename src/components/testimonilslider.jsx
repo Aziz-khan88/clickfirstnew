@@ -50,7 +50,9 @@ const TestimonilSlider = (props) => {
                                             </div>
                                             <div className={styles.testimonialInfo}>
                                                 <div className={styles.testimonialName}>
-                                                    <h6>{item?.name} <p>{item?.position}</p></h6>
+                                                    <h6>{item?.name}
+                                                        {/* <p>{item?.position}</p> */}
+                                                    </h6>
                                                 </div>
                                                 <div className={styles.testimonialRating}>
                                                     <div className={styles.testimonialNumbers}>

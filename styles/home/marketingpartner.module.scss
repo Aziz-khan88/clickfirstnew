@@ -2,36 +2,81 @@
 
 .marketingPartner {
     position: relative;
+    overflow: hidden;
+    animation: fadeInSection 2s ease-in-out forwards;
+
+    @keyframes fadeInSection {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        opacity: 1;
+    }
 
     &::before {
-        content: '';
         background-image: url('../../public/home/left_img.svg');
         width: 300px;
         height: 200px;
-        display: block;
-        position: absolute;
         left: 0px;
         top: 50px;
-        background-repeat: no-repeat;
         background-position: left bottom;
-        z-index: 0;
-        background-size: contain;
+        transform: translateX(-20px) rotate(-5deg);
+        transition: opacity 0.6s ease-in-out;
     }
 
     &::after {
-        content: '';
         background-image: url('../../public/home/right_img.svg');
         width: 220px;
         height: 220px;
-        display: block;
-        position: absolute;
         right: 0px;
         bottom: 0px;
-        background-size: contain;
-        background-repeat: no-repeat;
         background-position: right bottom;
-        z-index: 0;
+        transform: translateX(20px) rotate(5deg);
+        transition: opacity 0.6s ease-in-out;
     }
+
+    @keyframes waveMotion {
+        0% {
+            transform: translateX(0px) rotate(0deg);
+        }
+
+        25% {
+            transform: translateX(-10px) rotate(-3deg);
+        }
+
+        50% {
+            transform: translateX(0px) rotate(0deg);
+        }
+
+        75% {
+            transform: translateX(10px) rotate(3deg);
+        }
+
+        100% {
+            transform: translateX(0px) rotate(0deg);
+        }
+    }
+
+    &:hover::before,
+    &:hover::after {
+        animation: waveMotion 2s ease-in-out infinite;
+    }
+
 
     .marketingPartnerBox {
         margin-top: 20px;

@@ -50,7 +50,6 @@ const Footer = () => {
                                     <h6>LINKS</h6>
                                     <ul>
                                         <li><Link href="#" aria-label="Home Page">Home</Link></li>
-                                        <li><Link href="#" aria-label="Pricing Page">Pricing</Link></li>
                                         <li><Link href="#" aria-label="About Page">About</Link></li>
                                         <li><Link href="#" aria-label="Contact Page">Contact</Link></li>
                                     </ul>
@@ -59,12 +58,14 @@ const Footer = () => {
                                     <h6>SERVICES</h6>
                                     <ul>
                                         <li><Link href="#" aria-label="Social Media Marketing Page">Social Media Marketing</Link></li>
-                                        <li><Link href="#" aria-label="Search Engine Optimization Page">Search Engine Optimization</Link></li>
+                                        <li><Link href="#" aria-label="Social Media Management Page">Social Media Management</Link></li>
+                                        <li><Link href="#" aria-label="Social Media Advertising Page">Social Media Advertising</Link></li>
                                         <li><Link href="#" aria-label="Influencer Marketing Page">Influencer Marketing</Link></li>
-                                        <li><Link href="#" aria-label="Google Ads Page">Google Ads</Link></li>
-                                        <li><Link href="#" aria-label="Email Marketing Page" >Email Marketing</Link></li>
-                                        <li><Link href="#" aria-label="YouTube Optimization Page">YouTube Optimization</Link></li>
+                                        <li><Link href="#" aria-label="YouTube Optimization Page" >YouTube Optimization</Link></li>
                                         <li><Link href="#" aria-label="YouTube Monetization Page">YouTube Monetization</Link></li>
+                                        <li><Link href="#" aria-label="Search Engine Optimization Page">Search Engine Optimization</Link></li>
+                                        <li><Link href="#" aria-label="Google Ads (PPC) Page">Google Ads (PPC)</Link></li>
+                                        <li><Link href="#" aria-label="Email Marketing Page">Email Marketing</Link></li>
                                     </ul>
                                 </div>
                             </div>

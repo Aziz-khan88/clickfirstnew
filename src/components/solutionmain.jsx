@@ -20,50 +20,58 @@ const data = [
         icon: <Awareness />,
         title: "Awareness",
         txt: "Show your Ads to people who are most likely to remember them.",
-        img: IMG01.src
+        img: IMG01.src,
+        btntxt: "Enhance Brand Recall"
     },
     {
         icon: <Sales />,
         title: "Sales",
         txt: "Find people likely to purchase your product or service.",
-        img: IMG02.src
+        img: IMG02.src,
+        btntxt: "Boost Sales"
     }
     ,
     {
         icon: <Leads />,
         title: "Leads",
         txt: "Collect leads for your business via instant forms, messages, calls, and sign-ups.",
-        img: IMG03.src
+        img: IMG03.src,
+        btntxt: "Capture Leads"
     },
     {
         icon: <Appointments />,
         title: "Bookings / Appointments",
         txt: "Encourage customers to book appointments directly with your business.",
-        img: IMG04.src
+        img: IMG04.src,
+        btntxt: "Secure Bookings"
     },
     {
         icon: <AppInstalls />,
         title: "App Installs",
         txt: "Promote your app to drive downloads and increase user engagement.",
-        img: IMG05.src
+        img: IMG05.src,
+        btntxt: "Drive App Downloads"
     },
     {
         icon: <WebsiteTraffic />,
         title: "Website Traffic",
         txt: "Direct potential customers to your website to explore your offerings.",
-        img: IMG06.src
+        img: IMG06.src,
+        btntxt: "Increase Website Traffic"
     },
     {
         icon: <MessagesCalls />,
-        title: "Messages/Calls",
-        txt: "Facilitate direct communication with your customers through messages and calls.",
-        img: IMG07.src
+        title: "Messages / Calls",
+        txt: "Start communicating with your customers through direct messages & calls.",
+        img: IMG07.src,
+        btntxt: "Start Getting Calls"
     },
     {
         icon: <Views />,
-        title: "Views",
-        txt: "Boost the visibility of your videos and content to attract more viewers",
-        img: IMG08.src
+        title: "Video Views",
+        txt: "Boost the visibility of your videos and content to attract more viewers.",
+        img: IMG08.src,
+        btntxt: "Maximize Video Views"
     }
 ]
 
@@ -75,7 +83,9 @@ const SolutionMain = () => {
                     <Col xxl={12}>
                         <div className={styles.solutionBox}>
                             {data.map((item, index) => (
-                                <div className={styles.solutionItem} key={index} style={{ backgroundImage: `url(${item.img})` }}>
+                                <div className={styles.solutionItem} key={index}
+                                // style={{ backgroundImage: `url(${item.img})` }}
+                                >
                                     <div className={styles.solutionIcon}>
                                         {item.icon}
                                     </div>
@@ -83,7 +93,7 @@ const SolutionMain = () => {
                                         <h3>{item.title}</h3>
                                         <p>{item.txt}</p>
                                     </div>
-                                    <Link href="#" className="commonClass" aria-label="Get a Free Quote">Get a Free Quote</Link>
+                                    <Link href="#" className="commonClass" aria-label="Get a Free Quote">{item.btntxt}</Link>
                                 </div>
                             ))}
                         </div>
