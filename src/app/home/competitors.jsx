@@ -48,7 +48,7 @@ const Competitors = () => {
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
                         <video width="100%" controls={false} autoPlay loop muted preload="none" ref={videoRef} style={{ maxWidth: '100%' }}>
-                            <source src={"videos/CompetitorsVideo.mp4"} type="video/mp4" />
+                            <source src="videos/CompetitorsVideo.mp4" type="video/mp4" />
 
                             Your browser does not support the video tag.
                         </video>
