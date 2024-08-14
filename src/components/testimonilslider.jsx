@@ -2,7 +2,7 @@ import { CarouselArrow, ClutchFav, PlayButton } from '@/src/app/app-constants';
 import styles from "@/styles/components/testimonialslider.module.scss";
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Image from 'next/image';
 import Fade from 'embla-carousel-fade';
@@ -10,7 +10,8 @@ import VideoPlayer from './videoplayer';
 
 const TestimonilSlider = (props) => {
     const { slides, options } = props;
-    const [emblaRef, embla] = useEmblaCarousel(options, [Fade(), Autoplay()]);
+    const autoplayRef = useRef(Autoplay()); // Create a ref to store the Autoplay instance
+    const [emblaRef, embla] = useEmblaCarousel(options, [Fade(), autoplayRef.current]);
     const [videoUrl, setVideoUrl] = useState("");
     const [isActive, setIsActive] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +25,6 @@ const TestimonilSlider = (props) => {
         if (embla) {
             embla.on('select', () => {
                 setCurrentIndex(embla.selectedScrollSnap());
-                // Stop video when the slide changes
                 setIsActive(false);
                 setVideoUrl("");
             });
@@ -32,11 +32,17 @@ const TestimonilSlider = (props) => {
     }, [embla]);
 
     const prevButtonHandler = () => {
-        if (embla) embla.scrollPrev();
+        if (embla) {
+            embla.scrollPrev();
+            autoplayRef.current.play(); // Restart autoplay
+        }
     };
 
     const nextButtonHandler = () => {
-        if (embla) embla.scrollNext();
+        if (embla) {
+            embla.scrollNext();
+            autoplayRef.current.play(); // Restart autoplay
+        }
     };
 
     return (

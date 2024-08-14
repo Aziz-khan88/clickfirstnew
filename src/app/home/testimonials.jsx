@@ -32,7 +32,7 @@ const SLIDES = [
     , {
         name: "Jean Gilford",
         position: "Founder, Creator Of Glorify",
-        txt: 'Within 45 minutes, Ronnie sorted out the problem with our Facebook page. He didn’t try to sell me other stuff but only focused on my problem and solved it. I will be working with Ronnie on other projects with Ronnie in the future.',
+        txt: "Within 45 minutes, Ronnie sorted out the problem with our Facebook page. He didn’t try to sell me other stuff but only focused on my problem and solved it. I will be working with Ronnie on other projects in the future.",
         videoUrl: "/home/test/video3.mp4",
         img: IMG03.src,
         rating: "4.9"
@@ -40,6 +40,7 @@ const SLIDES = [
 ]
 const Testimonials = () => {
     return (
+
         <section className={`ptb-100 ${styles.testimonialSec}`}>
             <Container>
                 <Row>
