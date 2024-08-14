@@ -302,7 +302,7 @@
             margin-bottom: 50px;
             @include font-size(16px);
             line-height: 30px;
-            @include padding (0px, 80px)
+            @include padding (0px, 90px)
         }
 
         .btnChat {
@@ -351,13 +351,15 @@
         h2 {
             @include font-size(35px);
             margin-bottom: 30px;
+            max-width: 70%;
+            margin: auto;
         }
 
         p {
             margin-bottom: 50px;
             @include font-size(15px);
             line-height: 30px;
-            @include padding (0px, 80px)
+            @include padding (0px, 110px)
         }
 
         .btnChat {
@@ -405,13 +407,14 @@
         h2 {
             @include font-size(30px);
             margin-bottom: 20px;
+            max-width: 100%;
         }
 
         p {
             margin-bottom: 20px;
             @include font-size(15px);
             line-height: 30px;
-            @include padding (0px, 30px)
+            @include padding (0px, 0px)
         }
 
         .btnChat {

@@ -63,9 +63,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Social Media Marketing
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
-                                                </span>
+                                                <span>Our social media marketing solutions help brands create an ever-lasting impression on their target audience.</span>
                                             </p>
                                         </div>
                                     </Link>
@@ -77,8 +75,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>YouTube Monetization
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Maximize your YouTube presence with optimized content that attracts views and grows your subscriber base.
                                                 </span>
                                             </p>
                                         </div>
@@ -91,9 +88,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Social Media Management
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
-                                                </span>
+                                                <span>Efficiently manage your brand’s online presence with strategies that build engagement and loyalty.</span>
                                             </p>
                                         </div>
                                     </Link>
@@ -105,8 +100,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Search Engine Optimization
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Boost your visibility with data-driven SEO strategies tailored to drive traffic and increase conversions.
                                                 </span>
                                             </p>
                                         </div>
@@ -119,8 +113,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Social Media Advertising
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Drive targeted traffic and maximize ROI with precision-focused ad campaigns that capture attention.
                                                 </span>
                                             </p>
                                         </div>
@@ -133,8 +126,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Google Ads (PPC)
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Boost your visibility with data-driven SEO strategies tailored to drive traffic and increase conversions.
                                                 </span>
                                             </p>
                                         </div>
@@ -147,8 +139,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Influencer Marketing
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Harness the power of influencers to amplify your brand’s reach and connect with your target audience.
                                                 </span>
                                             </p>
                                         </div>
@@ -161,8 +152,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>Email Marketing
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Engage your audience with personalized email campaigns designed to nurture leads and drive sales.
                                                 </span>
                                             </p>
                                         </div>
@@ -175,8 +165,7 @@ const Navigation = (props) => {
                                         </div>
                                         <div className={styles.content}>
                                             <p>YouTube Optimization
-                                                <span>A social media strategy for Click First involves
-                                                    creating a tailored plan to enhance your brand’s
+                                                <span>Maximize your YouTube presence with optimized content that attracts views and grows your subscriber base.
                                                 </span>
                                             </p>
                                         </div>

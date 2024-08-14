@@ -5,108 +5,155 @@ import CaseStudySlider from "@/src/components/casestudyslider"
 import IMG01 from "media/home/casestudy/img1.png"
 import IMG02 from "media/home/casestudy/img2.png"
 import IMG03 from "media/home/casestudy/img3.png"
+import Zigna1 from "media/home/casestudy/Zigna1.webp"
+import Zigna2 from "media/home/casestudy/Zigna2.webp"
+import Zigna3 from "media/home/casestudy/Zigna3.webp"
+import Randy1 from "media/home/casestudy/Randy1.webp"
+import Randy2 from "media/home/casestudy/Randy2.webp"
+import Randy3 from "media/home/casestudy/Randy3.webp"
+import Baseball1 from "media/home/casestudy/Baseball1.webp"
+import Baseball2 from "media/home/casestudy/Baseball2.webp"
+import Baseball3 from "media/home/casestudy/Baseball3.webp"
+import Alaska1 from "media/home/casestudy/Alaska1.webp"
+import Alaska2 from "media/home/casestudy/Alaska2.webp"
+import Alaska3 from "media/home/casestudy/Alaska3.webp"
+import Duct1 from "media/home/casestudy/Duct1.webp"
+import Duct2 from "media/home/casestudy/Duct2.webp"
+import Duct3 from "media/home/casestudy/Duct3.webp"
 
 
 
 const OPTIONS = { align: 'start', loop: true }
 const SLIDES = [
     {
-        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
-        txt: "A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,",
-        img: [IMG01, IMG02, IMG03],
+        title: "Transforming Zigna Genix's Online Presence: From Social Media Ads to Digital Strategy",
+        txt: "Zigna Genix initially sought Click First SMM's expertise to enhance its social media presence. After 8 months of successful collaboration and seeing impressive results, they chose to expand their engagement to include SEO, Google My Business (GMB) services, and email marketing. Our integrated digital marketing strategy has driven substantial growth for their business in terms of ROI. This evolution in their digital strategy has not only increased their online visibility but also deepened customer engagement, setting the stage for continued success.",
+        img: [Zigna1, Zigna2, Zigna3],
+        duration: "06",
+        web: "zignagenix.com",
         stats: [
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Reach",
+                points: "200K+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Traffic",
+                points: "14K+",
             },
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Conversations",
+                points: "2,400+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Qualified Leads",
+                points: "1K+",
+            }
+        ]
+    },
+    {
+        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
+        txt: "Randy Sage Films partnered with Click First SMM to enhance their YouTube SEO efforts, and over the course of 12 months, the results have been outstanding. Within just 6 months, their channel experienced significant growth, including over 2 million video views, 111,000+ watch hours, and 8,000 new subscribers. This surge in engagement has translated into more than $12,500 in earnings via monetization. Our strategic SEO approach has proven to be highly effective, driving impressive performance and financial success for Randy Sage Films.",
+        img: [Randy1, Randy2, Randy3],
+        duration: "12",
+        web: "youtube.com/@randysagefilms",
+        stats: [
+            {
+                tit: "Video Views",
+                points: "02 M+",
+            },
+            {
+                tit: "Watch Hours",
+                points: "111K+",
+            },
+            {
+                tit: "Subscribers",
+                points: "8K",
+            },
+            {
+                tit: "Earning",
+                points: "$12,500+",
             }
         ]
 
     },
     {
-        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
-        txt: "A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,",
-        img: [IMG01, IMG02, IMG03],
+        title: "Driving Record-Breaking Sales: How Baseball Bargains Achieved $3.2 Million in Revenue",
+        txt: "Baseball Bargains transformed their online presence with Click First SMM's comprehensive digital marketing strategy. Starting with Search Engine Optimization, their success prompted the addition of Social Media Marketing and Google Ads. This multi-faceted approach resulted in over $3.2 million in sales, 28,000 orders, and 500,000 store sessions. With an impressive 26% conversion rate, the results underscore the effectiveness of a well-rounded digital strategy in driving substantial revenue growth and maximizing online performance.",
+        img: [Baseball1, Baseball2, Baseball3],
+        duration: "12",
+        web: "baseballbargains.com",
         stats: [
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Sales",
+                points: "$3.2 M+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Orders",
+                points: "28K",
             },
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Traffic",
+                points: "500K+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Conversion Rate",
+                points: "27%",
             }
         ]
-
-    }, {
-        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
-        txt: "A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,",
-        img: [IMG01, IMG02, IMG03],
+    },
+    {
+        title: "Scaling Success: How Alaska Flour Achieved Consistent Growth Over 24 Months",
+        txt: "Over a 24-month partnership, Alaska Flour leveraged Click First SMM's expertise to significantly enhance their online presence. Initially focusing on organic marketing and branding services, the client soon expanded into paid campaigns. This strategic shift led to impressive outcomes: an average monthly revenue of over $25,000, 500+ orders per month, and more than 4,000 organic visitors. With a 23% organic engagement rate, the combined approach of organic and paid strategies has driven sustained growth and success for Alaska Flour.",
+        img: [Alaska1, Alaska2, Alaska3],
+        duration: "24",
+        web: "alaskaflour.com",
         stats: [
             {
+                tit: "Revenue",
+                points: "25K+",
+            },
+            {
+                tit: "Orders",
+                points: "500+",
+            },
+            {
                 tit: "Organic Traffic",
-                points: "104",
+                points: "4K+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
-            },
-            {
-                tit: "Organic Traffic",
-                points: "104",
-            },
-            {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Engagement Rate",
+                points: "23%",
             }
         ]
 
     },
     {
-        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
-        txt: "A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,A social media strategy for Click First involves creating a tailored plan to enhance your brand's presence and engagement across multiple platforms. This strategy includes setting clear objectives,",
-        img: [IMG03, IMG01, IMG02],
+        title: "From SEO Success to Social Media Excellence: Duct Care’s Growth Journey",
+        txt: "Duct Care’s initial focus on Search Engine Optimization laid the groundwork for a transformative digital strategy. Following the impressive results of our SEO efforts, we expanded their approach to include Social Media Marketing. This strategic enhancement yielded remarkable outcomes: a reach of over 39,000, 4,000 profile visits, and 200+ messages and conversions. The campaign also generated more than 70 qualified leads, demonstrating how integrating SEO with social media can significantly elevate business performance and lead generation.",
+        img: [Duct1, Duct2, Duct3],
+        duration: "03",
+        web: "ductcare.ca",
         stats: [
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Reach",
+                points: "39K+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Profile Visits",
+                points: "4K",
             },
             {
-                tit: "Organic Traffic",
-                points: "104",
+                tit: "Conversions",
+                points: "200+",
             },
             {
-                tit: "Organic Clicks",
-                points: "252",
+                tit: "Qualified Lead",
+                points: "70+",
             }
         ]
-
     }
-]
 
+]
 const CaseStudy = () => {
     return (
         <section className={`ptb-100 ${styles.caseStudy}`}>

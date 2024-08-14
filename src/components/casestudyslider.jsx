@@ -75,7 +75,8 @@ const CaseStudySlider = ({ slides, options }) => {
                                         </section>
                                     </div>
                                     <div className={styles.contentBox}>
-                                        <h5>{item.title}</h5>
+                                        <h5>{item.title} </h5>
+                                        <div className={styles.durationDiv}><span>Duration : </span>{item.duration} Months / <span>Website : </span>{item.web}</div>
                                         <p>{item.txt}</p>
                                         <div className="btnTow">
                                             <Link href="#" className="buttonStyle" aria-label="Read Case Study">
@@ -90,7 +91,7 @@ const CaseStudySlider = ({ slides, options }) => {
                                         {item.stats.map((stat, statIndex) => (
                                             <div className={styles.statsItem} key={statIndex}>
                                                 <div className={styles.points}>
-                                                    <ArrowYellow /> {stat.points} %
+                                                    <ArrowYellow /> {stat.points}
                                                 </div>
                                                 <h6>{stat.tit}</h6>
                                             </div>

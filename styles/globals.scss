@@ -21,6 +21,12 @@ body {
         }
     }
 
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .modal-lg,
     .modal-xl {
         max-width: 600px;
@@ -150,6 +156,15 @@ body {
             background: $secondary-color;
             border-color: $secondary-color;
             transition: background-color 0.3s ease;
+        }
+
+        &.marginAuto {
+            margin: 30px auto 0px;
+            justify-content: center;
+            display: flex;
+            height: 60px;
+            max-width: 350px;
+            padding: 10px 20px;
         }
 
 
@@ -579,6 +594,13 @@ body {
             font-size: 16px;
             height: 45px;
             padding: 0px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 60px;
+                max-width: 350px;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -646,6 +668,13 @@ body {
             font-size: 15px;
             height: 40px;
             padding: 0px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 60px;
+                max-width: 350px;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -711,6 +740,13 @@ body {
             font-size: 14px;
             height: 38px;
             padding: 0px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 55px;
+                max-width: max-content;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -778,6 +814,13 @@ body {
             font-size: 13px;
             height: 35px;
             padding: 0px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 50px;
+                max-width: max-content;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -852,6 +895,13 @@ body {
             font-size: 13px;
             height: 35px;
             padding: 0px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 50px;
+                max-width: max-content;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -948,6 +998,13 @@ body {
             font-size: 12px;
             height: 32px;
             padding: 10px 20px;
+
+            &.marginAuto {
+                margin: 30px auto 0px;
+                height: 50px;
+                max-width: max-content;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {
@@ -1033,6 +1090,13 @@ body {
             height: 40px;
             padding: 10px 12px;
             max-width: 200px;
+
+            &.marginAuto {
+                margin: 20px auto 0px;
+                height: 45px;
+                max-width: max-content;
+                padding: 10px 20px;
+            }
         }
 
         .btnTow {

@@ -6,23 +6,27 @@ import { useState, useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Image from 'next/image';
 import Fade from 'embla-carousel-fade';
-import VideoModal from '@/src/components/videomodal';
+import VideoPlayer from './videoplayer';
 
 const TestimonilSlider = (props) => {
     const { slides, options } = props;
     const [emblaRef, embla] = useEmblaCarousel(options, [Fade(), Autoplay()]);
-    const [videoUrl, setvideoUrl] = useState("");
-    const [modalShow, setModalShow] = useState(false);
+    const [videoUrl, setVideoUrl] = useState("");
+    const [isActive, setIsActive] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleSlideClick = (url) => {
-        setModalShow(true);
-        setvideoUrl(url);
+        setIsActive(true);
+        setVideoUrl(url);
     };
+
     useEffect(() => {
         if (embla) {
             embla.on('select', () => {
                 setCurrentIndex(embla.selectedScrollSnap());
+                // Stop video when the slide changes
+                setIsActive(false);
+                setVideoUrl("");
             });
         }
     }, [embla]);
@@ -46,13 +50,11 @@ const TestimonilSlider = (props) => {
                                     <Col lg={6} md={6} className="mt-auto">
                                         <div className={styles.itemMain}>
                                             <div className={`${styles.txtItem} ${currentIndex === index ? 'animatedItem' : ''}`}>
-                                                Our Result-Oriented SEO Services Come At The Most Sensible Rates Ever. We Propose Multiple Pricing SEO Packages To Best Suit Your Varying Budgets And Business Goals.
+                                                {item.txt}
                                             </div>
                                             <div className={styles.testimonialInfo}>
                                                 <div className={styles.testimonialName}>
-                                                    <h6>{item?.name}
-                                                        {/* <p>{item?.position}</p> */}
-                                                    </h6>
+                                                    <h6>{item?.name}</h6>
                                                 </div>
                                                 <div className={styles.testimonialRating}>
                                                     <div className={styles.testimonialNumbers}>
@@ -64,11 +66,24 @@ const TestimonilSlider = (props) => {
                                     </Col>
                                     <Col lg={6} md={6} className="my-auto">
                                         <div className={styles.testimonialImg}>
-                                            <Image src={item.img} alt={item?.name} width={812} height={440} className={`${currentIndex === index ? 'zoom-out' : ''}`} />
-                                            <div className={styles.playBtn} onClick={() => handleSlideClick(item.videoUrl)}><PlayButton /></div>
+                                            {isActive && currentIndex === index ? (
+                                                <VideoPlayer testVideo={videoUrl} />
+                                            ) : (
+                                                <>
+                                                    <Image
+                                                        src={item.img}
+                                                        alt={item?.name}
+                                                        width={812}
+                                                        height={440}
+                                                        className={`${currentIndex === index ? 'zoom-out' : ''}`}
+                                                    />
+                                                    <div className={styles.playBtn} onClick={() => handleSlideClick(item.videoUrl)}>
+                                                        <PlayButton />
+                                                    </div>
+                                                </>
+                                            )}
                                         </div>
-                                        <VideoModal show={modalShow} videoUrl={videoUrl}
-                                            onHide={() => setModalShow(false)} />
+
                                     </Col>
                                 </Row>
                             </div>

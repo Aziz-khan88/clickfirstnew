@@ -19,7 +19,7 @@ const FAQs = [
         txt: "Yes, we offer a free marketing audit and consultation service. Our expert team provides a comprehensive analysis of your current marketing efforts, identifying areas of improvement and growth opportunities. This service is designed to give you a clear roadmap to success, tailored specifically to your business needs."
     },
     {
-        title: "What Clientele or Industries Do You Work With?",
+        title: "What Industries Do We Work With?",
         txt: "We work with a diverse range of industries—over 50 in total—providing branding, marketing, and business growth strategies tailored to each sector. Our experience spans from small startups to large enterprises, ensuring that no matter the industry, we can drive impactful results."
     },
     {
@@ -34,7 +34,7 @@ const FAQs = [
         txt: "The cost of our branding packages varies depending on the scope and complexity of the project. We offer customized packages tailored to your business’s unique needs, ensuring you receive the best value for your investment. Please contact us for a detailed quote based on your specific requirements. Click here to see our complete packages."
     },
     {
-        title: "How much do you charge for a branding package?",
+        title: "Do We Offer Search Engine Optimization Services?",
         txt: "Yes, we offer expert SEO services designed to boost your online visibility, drive organic traffic, and improve your search engine rankings. Our SEO strategies are tailored to your business goals, ensuring that you attract the right audience and achieve long-term success in the digital space."
     }
 ]

@@ -35,6 +35,7 @@ import IMG31 from "media/home/industries/Non-Profits-Causes.webp"
 import IMG32 from "media/home/industries/Transportation-Logistics.webp"
 import IMG33 from "media/home/industries/Legal.webp"
 import IMG34 from "media/home/industries/Travel-Tours.webp"
+import IMG35 from "media/home/industries/Film-Photography.webp"
 import Link from "next/link"
 import { TitleBorderLine } from "@/src/app/app-constants"
 
@@ -231,6 +232,12 @@ const SLIDES = [
         img: IMG34.src,
         links: "#"
     }
+    , {
+        title: "Film & Photography",
+        txt: "Want your images and videos to stand out in the digital crowd? Our social media strategies will elevate your film and photography work, attracting the audience you deserve!",
+        img: IMG35.src,
+        links: "#"
+    }
 ]
 const Industries = () => {
     return (
@@ -238,8 +245,7 @@ const Industries = () => {
             <Container>
                 <Row>
                     <Col xxl={6} xl={6} lg={8} className="text-center m-auto">
-                        <h2>Transforming Businesses in
-                            <span className="lastHeading"> Various Industries <TitleBorderLine /></span></h2>
+                        <h2>Transforming Businesses In <span className="lastHeading">Various Industries<TitleBorderLine /></span></h2>
                     </Col>
                 </Row>
             </Container>
@@ -247,10 +253,7 @@ const Industries = () => {
                 <Row>
                     <Col xxl={12} xl={12} lg={12} className="m-auto p-0">
                         <IndustriesSlider slides={SLIDES} options={OPTIONS} />
-                        <div className="btnTow marginAuto">
-                            <Link href="#" className="buttonStyle" aria-label="Let’s Discuss Your Project">Discover Our Impact Across Industries</Link>
-                            <Link href="#" className="buttonStyle borderStyle" aria-label="Call Now">Call Now: 346-299-2202</Link>
-                        </div>
+                        <Link href="#" className="commonClass marginAuto" aria-label="Let’s Discuss Your Project">Discover Our Impact Across Industries</Link>
                     </Col>
                 </Row>
             </Container>

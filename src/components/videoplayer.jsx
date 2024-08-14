@@ -10,7 +10,7 @@ const VideoPlayer = ({ video, testVideo }) => {
                 </video>
             </div>
         ) : (
-            <video width="100%" controls={false} autoPlay loop muted preload="none">
+            <video width="100%" controls={false} autoPlay loop preload="none">
                 <source src={testVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
