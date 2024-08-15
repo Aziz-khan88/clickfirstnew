@@ -53,13 +53,13 @@ const SLIDES = [
         ]
     },
     {
-        title: "See How Victorious Helped GE Increase Organic Impressions By 284% In Two Years.",
+        title: "Unlocking YouTube Revenue: How Randy Sage Films Achieved $12,500+ in Monetization",
         txt: "Randy Sage Films partnered with Click First SMM to enhance their YouTube SEO efforts, and over the course of 12 months, the results have been outstanding. Within just 6 months, their channel experienced significant growth, including over 2 million video views, 111,000+ watch hours, and 8,000 new subscribers. This surge in engagement has translated into more than $12,500 in earnings via monetization. Our strategic SEO approach has proven to be highly effective, driving impressive performance and financial success for Randy Sage Films.",
         img: [Randy1, Randy2, Randy3],
         duration: "12",
         web: (
             <>
-                <span>Channel:</span> youtube.com/ @randysagefilms
+                <span>Channel:</span> youtube.com/@randysagefilms
             </>
         ),
         stats: [
@@ -76,7 +76,7 @@ const SLIDES = [
                 points: "8K",
             },
             {
-                tit: "Earning",
+                tit: "Earnings",
                 points: "$12,500+",
             }
         ]
@@ -142,7 +142,7 @@ const SLIDES = [
 
     },
     {
-        title: "Can you make this heading bold on every case study?",
+        title: "From SEO Success to Social Media Excellence: Duct Care’s Growth Journey",
         txt: "Duct Care’s initial focus on Search Engine Optimization laid the groundwork for a transformative digital strategy. Following the impressive results of our SEO efforts, we expanded their approach to include Social Media Marketing. This strategic enhancement yielded remarkable outcomes: a reach of over 39,000, 4,000 profile visits, and 200+ messages and conversions. The campaign also generated more than 70 qualified leads, demonstrating how integrating SEO with social media can significantly elevate business performance and lead generation.",
         img: [Duct1, Duct2, Duct3],
         duration: "03",
@@ -165,7 +165,7 @@ const SLIDES = [
                 points: "200+",
             },
             {
-                tit: "Qualified Lead",
+                tit: "Qualified Leads",
                 points: "70+",
             }
         ]

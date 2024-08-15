@@ -83,7 +83,7 @@ const CaseStudySlider = ({ slides, options }) => {
                                         <p>{item.txt}</p>
                                         <div className="btnTow">
                                             <Link href="#" className="buttonStyle" aria-label="Read Case Study">
-                                                learn more
+                                                Learn more
                                             </Link>
                                             <Link href="tel:346-299-2202" className="buttonStyle borderStyle" aria-label="Call Now">
                                                 Call Now: 346-299-2202
