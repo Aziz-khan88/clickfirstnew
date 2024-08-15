@@ -28,6 +28,7 @@
                 cursor: pointer;
                 border-bottom: 1px solid $border-color;
                 padding-bottom: 10px;
+                @include transition(all);
 
 
                 svg {
@@ -37,6 +38,18 @@
                     right: 0px;
                     transition: transform 0.3s;
                 }
+
+                &:hover {
+                    color: $secondary-color;
+                    @include transition(all);
+
+                    svg {
+                        path {
+                            fill: $secondary-color;
+                            @include transition(all);
+                        }
+                    }
+                }
             }
 
             &.active {
@@ -44,9 +57,15 @@
                 transition: height 0.3s ease-in;
 
                 .tabTitle {
+                    color: $secondary-color;
+
                     svg {
                         transition: transform 0.3s;
                         transform: rotate(-90deg);
+
+                        path {
+                            fill: $secondary-color;
+                        }
                     }
                 }
 
