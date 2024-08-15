@@ -46,7 +46,7 @@ const SLIDES = [
             },
             {
                 tit: "Qualified Leads",
-                points: "1K+",
+                points: "1,000+",
             }
         ]
     },
@@ -59,7 +59,7 @@ const SLIDES = [
         stats: [
             {
                 tit: "Video Views",
-                points: "02 M+",
+                points: "2M+",
             },
             {
                 tit: "Watch Hours",
@@ -85,7 +85,7 @@ const SLIDES = [
         stats: [
             {
                 tit: "Sales",
-                points: "$3.2 M+",
+                points: "$3.2M+",
             },
             {
                 tit: "Orders",
@@ -128,7 +128,7 @@ const SLIDES = [
 
     },
     {
-        title: "From SEO Success to Social Media Excellence: Duct Care’s Growth Journey",
+        title: "Can you make this heading bold on every case study?",
         txt: "Duct Care’s initial focus on Search Engine Optimization laid the groundwork for a transformative digital strategy. Following the impressive results of our SEO efforts, we expanded their approach to include Social Media Marketing. This strategic enhancement yielded remarkable outcomes: a reach of over 39,000, 4,000 profile visits, and 200+ messages and conversions. The campaign also generated more than 70 qualified leads, demonstrating how integrating SEO with social media can significantly elevate business performance and lead generation.",
         img: [Duct1, Duct2, Duct3],
         duration: "03",

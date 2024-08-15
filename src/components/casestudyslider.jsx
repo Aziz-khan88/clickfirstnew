@@ -76,11 +76,18 @@ const CaseStudySlider = ({ slides, options }) => {
                                     </div>
                                     <div className={styles.contentBox}>
                                         <h5>{item.title} </h5>
-                                        <div className={styles.durationDiv}><span>Duration : </span>{item.duration} Months / <span>Website : </span>{item.web}</div>
+                                        <div className={styles.durationDiv}>
+                                            <div>
+                                                <span>Duration : </span>{item.duration} Months
+                                            </div>
+                                            <div>
+                                                <span>Website : </span>{item.web}
+                                            </div>
+                                        </div>
                                         <p>{item.txt}</p>
                                         <div className="btnTow">
                                             <Link href="#" className="buttonStyle" aria-label="Read Case Study">
-                                                Read Case Study
+                                                learn more
                                             </Link>
                                             <Link href="tel:346-299-2202" className="buttonStyle borderStyle" aria-label="Call Now">
                                                 Call Now: 346-299-2202
