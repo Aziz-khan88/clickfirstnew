@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowYellow, CarouselArrow } from "@/src/app/app-constants";
 import Autoplay from "embla-carousel-autoplay";
+import VideoModal from "./videomodal";
 
 const useInnerCarousel = (isActive, options) => {
     const [emblaRefImg, emblaInner] = useEmblaCarousel(
@@ -27,6 +28,15 @@ const useInnerCarousel = (isActive, options) => {
 };
 
 const CaseStudySlider = ({ slides, options }) => {
+    const [modalShow, setModalShow] = useState(false);
+    const [selectedImageUrl, setSelectedImageUrl] = useState(null);
+
+    const handleImageClick = (imageUrl) => {
+        setSelectedImageUrl(imageUrl);
+        setModalShow(true);
+    };
+
+
     const [emblaRef, embla] = useEmblaCarousel(
         options,
         [ClassNames(), Autoplay({ delay: 4000 })]
@@ -61,7 +71,7 @@ const CaseStudySlider = ({ slides, options }) => {
                                             <div className="embla__viewport1" ref={emblaRefImg}>
                                                 <div className="embla__container1">
                                                     {item.img.map((imges, imgIndex) => (
-                                                        <div className="embla__slide1" key={imgIndex}>
+                                                        <div className="embla__slide1" key={imgIndex} onClick={() => handleImageClick(imges.src)}>
                                                             <Image
                                                                 src={imges.src}
                                                                 alt="Case Study Image"
@@ -128,6 +138,10 @@ const CaseStudySlider = ({ slides, options }) => {
                     </div>
                 ))}
             </div>
+            <VideoModal show={modalShow}
+                onHide={() => setModalShow(false)}
+                isImg={selectedImageUrl}
+                imageUrl={selectedImageUrl} />
         </div>
     );
 };
