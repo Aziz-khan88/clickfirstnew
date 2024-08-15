@@ -28,7 +28,11 @@ const SLIDES = [
         txt: "Zigna Genix initially sought Click First SMM's expertise to enhance its social media presence. After 8 months of successful collaboration and seeing impressive results, they chose to expand their engagement to include SEO, Google My Business (GMB) services, and email marketing. Our integrated digital marketing strategy has driven substantial growth for their business in terms of ROI. This evolution in their digital strategy has not only increased their online visibility but also deepened customer engagement, setting the stage for continued success.",
         img: [Zigna1, Zigna2, Zigna3],
         duration: "06",
-        web: "zignagenix.com",
+        web: (
+            <>
+                <span>Website : </span>zignagenix.com
+            </>
+        ),
         stats: [
             {
                 tit: "Reach",
@@ -53,7 +57,11 @@ const SLIDES = [
         txt: "Randy Sage Films partnered with Click First SMM to enhance their YouTube SEO efforts, and over the course of 12 months, the results have been outstanding. Within just 6 months, their channel experienced significant growth, including over 2 million video views, 111,000+ watch hours, and 8,000 new subscribers. This surge in engagement has translated into more than $12,500 in earnings via monetization. Our strategic SEO approach has proven to be highly effective, driving impressive performance and financial success for Randy Sage Films.",
         img: [Randy1, Randy2, Randy3],
         duration: "12",
-        web: "@randysagefilms",
+        web: (
+            <>
+                <span>Channel:</span> youtube.com/ @randysagefilms
+            </>
+        ),
         stats: [
             {
                 tit: "Video Views",
@@ -79,7 +87,11 @@ const SLIDES = [
         txt: "Baseball Bargains transformed their online presence with Click First SMM's comprehensive digital marketing strategy. Starting with Search Engine Optimization, their success prompted the addition of Social Media Marketing and Google Ads. This multi-faceted approach resulted in over $3.2 million in sales, 28,000 orders, and 500,000 store sessions. With an impressive 26% conversion rate, the results underscore the effectiveness of a well-rounded digital strategy in driving substantial revenue growth and maximizing online performance.",
         img: [Baseball1, Baseball2, Baseball3],
         duration: "12",
-        web: "baseballbargains.com",
+        web: (
+            <>
+                <span>Website : </span>baseballbargains.com
+            </>
+        ),
         stats: [
             {
                 tit: "Sales",
@@ -104,7 +116,11 @@ const SLIDES = [
         txt: "Over a 24-month partnership, Alaska Flour leveraged Click First SMM's expertise to significantly enhance their online presence. Initially focusing on organic marketing and branding services, the client soon expanded into paid campaigns. This strategic shift led to impressive outcomes: an average monthly revenue of over $25,000, 500+ orders per month, and more than 4,000 organic visitors. With a 23% organic engagement rate, the combined approach of organic and paid strategies has driven sustained growth and success for Alaska Flour.",
         img: [Alaska1, Alaska2, Alaska3],
         duration: "24",
-        web: "alaskaflour.com",
+        web: (
+            <>
+                <span>Website : </span>alaskaflour.com
+            </>
+        ),
         stats: [
             {
                 tit: "Revenue",
@@ -130,7 +146,11 @@ const SLIDES = [
         txt: "Duct Care’s initial focus on Search Engine Optimization laid the groundwork for a transformative digital strategy. Following the impressive results of our SEO efforts, we expanded their approach to include Social Media Marketing. This strategic enhancement yielded remarkable outcomes: a reach of over 39,000, 4,000 profile visits, and 200+ messages and conversions. The campaign also generated more than 70 qualified leads, demonstrating how integrating SEO with social media can significantly elevate business performance and lead generation.",
         img: [Duct1, Duct2, Duct3],
         duration: "03",
-        web: "ductcare.ca",
+        web: (
+            <>
+                <span>Website : </span>ductcare.ca
+            </>
+        ),
         stats: [
             {
                 tit: "Reach",

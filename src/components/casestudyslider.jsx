@@ -77,7 +77,7 @@ const CaseStudySlider = ({ slides, options }) => {
                                     <div className={styles.contentBox}>
                                         <div className={styles.durationDiv}>
                                             <div><span>Duration : </span>{item.duration} Months</div>
-                                            <div><span>Website : </span>{item.web}</div>
+                                            <div>{item.web}</div>
                                         </div>
                                         <h5>{item.title} </h5>
                                         <p>{item.txt}</p>
