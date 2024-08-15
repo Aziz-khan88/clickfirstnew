@@ -75,10 +75,11 @@ const CaseStudySlider = ({ slides, options }) => {
                                         </section>
                                     </div>
                                     <div className={styles.contentBox}>
-                                        <h5>{item.title} </h5>
                                         <div className={styles.durationDiv}>
-                                            <span>Duration : </span>{item.duration} Months / <span>Website : </span>{item.web}
+                                            <div><span>Duration : </span>{item.duration} Months</div>
+                                            <div><span>Website : </span>{item.web}</div>
                                         </div>
+                                        <h5>{item.title} </h5>
                                         <p>{item.txt}</p>
                                         <div className="btnTow">
                                             <Link href="#" className="buttonStyle" aria-label="Read Case Study">
@@ -98,6 +99,7 @@ const CaseStudySlider = ({ slides, options }) => {
                                                 <h6>{stat.tit}</h6>
                                             </div>
                                         ))}
+
                                     </div>
                                 </div>
                             </div>

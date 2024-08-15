@@ -645,7 +645,7 @@ body {
         }
 
         h5 {
-            @include font-size(21px);
+            @include font-size(20px);
             line-height: 30px;
             margin-bottom: 20px;
         }
@@ -872,7 +872,7 @@ body {
         }
 
         h5 {
-            @include font-size(17px);
+            @include font-size(16px);
             line-height: 26px;
             margin-bottom: 10px;
         }
@@ -1023,7 +1023,7 @@ body {
                 margin-left: calc(15px * -1);
 
                 .embla__slide {
-                    flex: 0 0 85%;
+                    flex: 0 0 90%;
                     padding-left: 15px;
                 }
             }
@@ -1052,7 +1052,6 @@ body {
         }
     }
 }
-
 
 @include media-query(666px) {
     body {
