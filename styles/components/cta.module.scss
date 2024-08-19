@@ -177,8 +177,8 @@
         }
 
         &::after {
-            background-size: 90%;
-            right: -28px;
+            background-size: 70%;
+            right: -60px;
         }
 
         h2 {
@@ -190,7 +190,7 @@
             margin-bottom: 50px;
             @include font-size(16px);
             line-height: 30px;
-            @include padding (0px, 100px)
+            @include padding (0px, 0px)
         }
 
         .btnChat {
@@ -230,12 +230,12 @@
         // height: 700px;
 
         &::before {
-            background-size: 88%;
+            background-size: 80%;
         }
 
         &::after {
-            background-size: 80%;
-            right: -58px;
+            background-size: 60%;
+            right: -100px;
         }
 
         h2 {
@@ -245,9 +245,9 @@
 
         p {
             margin-bottom: 50px;
-            @include font-size(16px);
+            @include font-size(15px);
             line-height: 30px;
-            @include padding (0px, 80px)
+            @include padding (0px, 0px)
         }
 
         .btnChat {
@@ -285,12 +285,12 @@
         // height: 600px;
 
         &::before {
-            background-size: 88%;
+            background-size: 80%;
         }
 
         &::after {
-            background-size: 80%;
-            right: -58px;
+            background-size: 70%;
+            right: -100px;
         }
 
         h2 {
@@ -300,9 +300,9 @@
 
         p {
             margin-bottom: 50px;
-            @include font-size(16px);
+            @include font-size(14px);
             line-height: 30px;
-            @include padding (0px, 90px)
+            @include padding (0px, 30px)
         }
 
         .btnChat {

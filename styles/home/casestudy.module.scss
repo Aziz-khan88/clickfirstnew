@@ -55,7 +55,7 @@
                 font-weight: 700;
 
                 span {
-                    color: $black-color;
+                    color: $secondary-color;
                 }
             }
 
@@ -88,6 +88,8 @@
             p {
                 color: $white-color;
                 margin-bottom: 20px;
+                text-align: justify;
+                line-height: normal;
             }
 
         }
