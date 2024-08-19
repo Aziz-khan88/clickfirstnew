@@ -110,6 +110,17 @@ const CaseStudySlider = ({ slides, options }) => {
                                             </div>
                                         ))}
 
+                                        {item.logos?.logo && (
+                                            <div className={styles.logoBox} >
+                                                <Image
+                                                    src={item.logos.logo}
+                                                    alt="Case Study Logo"
+                                                    width={item.logos.width}
+                                                    height={item.logos.height}
+                                                />
+                                            </div>
+                                        )}
+
                                     </div>
                                 </div>
                             </div>

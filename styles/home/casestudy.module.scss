@@ -52,7 +52,7 @@
             h5 {
                 color: $white-color;
                 margin-bottom: 10px;
-                font-weight: 600;
+                font-weight: 700;
 
                 span {
                     color: $black-color;
@@ -62,14 +62,27 @@
             .durationDiv {
                 font-size: 16px;
                 margin-bottom: 10px;
-                color: $white-color;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
+                gap: 20px;
+                font-weight: 600;
+                color: $secondary-color;
 
-                span {
-                    font-weight: 600;
-                    color: $secondary-color;
+                div {
+                    border-right: 2px solid #F2F2F2;
+                    padding-right: 20px;
+
+                    span {
+                        font-weight: 500;
+                        color: $white-color;
+                    }
+
+                    &:last-child {
+                        border-right: 0px;
+                    }
                 }
+
+
             }
 
             p {
@@ -87,6 +100,7 @@
             .statsItem {
                 border-right: 1px solid $border-color;
                 padding: 0px 40px;
+                flex: 0 0 auto;
 
                 .points {
                     font-size: 40px;
@@ -117,13 +131,20 @@
                     padding-left: 0px;
                 }
 
-                &:last-child {
+                &:last-child,
+                &:nth-last-child(2) {
                     padding-right: 0px;
                     border-right: 0px;
                 }
             }
 
+            .logoBox {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
 
+            }
         }
     }
 
@@ -164,7 +185,7 @@
                 }
 
                 .statsItem {
-                    padding: 0px 35px;
+                    padding: 0px 30px;
 
                     .points {
                         font-size: 38px;
@@ -219,7 +240,7 @@
                 margin-top: 30px;
 
                 .statsItem {
-                    padding: 0px 35px;
+                    padding: 0px 20px;
 
                     .points {
                         font-size: 32px;
@@ -359,7 +380,7 @@
         }
 
         .caseBox {
-            height: 540px;
+            height: 550px;
             border-radius: 10px;
             padding: 15px;
 
@@ -386,7 +407,7 @@
                 margin-top: 20px;
 
                 .statsItem {
-                    padding: 0px 25px;
+                    padding: 0px 20px;
 
                     .points {
                         font-size: 22px;
@@ -439,15 +460,15 @@
                 margin-top: 20px;
 
                 .statsItem {
-                    padding: 0px 25px;
+                    padding: 0px 10px;
 
                     .points {
-                        font-size: 22px;
+                        font-size: 20px;
                         line-height: 22px;
                         margin-bottom: 0px;
 
                         svg {
-                            height: 18px
+                            height: 16px;
                         }
                     }
 
@@ -484,6 +505,23 @@
             .contentBox {
                 p {
                     margin-bottom: 15px;
+                }
+
+                .durationDiv {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 5px;
+                    font-weight: 600;
+                    color: $secondary-color;
+
+                    div {
+                        border-right: 0px solid #F2F2F2;
+                    }
+
+
                 }
 
             }
@@ -524,10 +562,15 @@
                         padding-left: 10px;
                     }
 
-                    &:last-child {
+                    &:last-child,
+                    &:nth-last-child(2) {
                         padding-right: 10px;
                         border-right: 1px solid $border-color;
                     }
+                }
+
+                .logoBox {
+                    justify-content: flex-start;
                 }
             }
         }
