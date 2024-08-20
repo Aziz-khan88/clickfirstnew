@@ -77,8 +77,7 @@ const Footer = () => {
                                         <LocationIcon />
                                     </div>
                                     <div>
-                                        Headquarters: 9402 Synott RD apt 114,
-                                        Houston Texas 77083
+                                        9402 Synott Rd Apt 114, Houston, TX 77083
                                     </div>
                                 </li>
                                 <li>
@@ -86,8 +85,7 @@ const Footer = () => {
                                         <LocationIcon />
                                     </div>
                                     <div>
-                                        Operations: 4424 W Sam Houston PKWY
-                                        N Westway #301 Houston, TX 77041
+                                        4424 W Sam Houston Pkwy N Westway #301, Houston, TX 77041
                                     </div>
                                 </li>
                                 <li>

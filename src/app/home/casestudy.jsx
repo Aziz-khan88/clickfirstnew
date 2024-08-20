@@ -38,7 +38,7 @@ const SLIDES = [
         duration: "06",
         logos: {
             logo: ZignaLogo.src,
-            width: "190",
+            width: "155",
             height: "60"
         },
         web: (
@@ -75,7 +75,7 @@ const SLIDES = [
         img: [Randy1, Randy2, Randy3],
         logos: {
             logo: RandyLogo.src,
-            width: "60",
+            width: "155",
             height: "60"
         },
         duration: "12",
@@ -114,7 +114,7 @@ const SLIDES = [
         img: [Baseball1, Baseball2, Baseball3],
         logos: {
             logo: BaseballLogo.src,
-            width: "146",
+            width: "155",
             height: "60"
         },
         duration: "12",
@@ -152,7 +152,7 @@ const SLIDES = [
         img: [Alaska1, Alaska2, Alaska3],
         logos: {
             logo: AlaskaLogo.src,
-            width: "109",
+            width: "155",
             height: "60"
         },
         duration: "24",
@@ -187,7 +187,7 @@ const SLIDES = [
         img: [Duct1, Duct2, Duct3],
         logos: {
             logo: DuctLogo.src,
-            width: "129",
+            width: "155",
             height: "60"
         },
         duration: "03",

@@ -30,7 +30,7 @@ const Priceing = () => {
             <Container>
                 <Row>
                     <Col xl={9} lg={9} className="m-auto text-center">
-                        <h2>Quality Over Discounts
+                        <h2>Quality Over Discounts<br />
                             Elevate Your <span className="lastHeading">Social Media Presence Today!<TitleBorderLine /></span></h2>
                     </Col>
                 </Row>
