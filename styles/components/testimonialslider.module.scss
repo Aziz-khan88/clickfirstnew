@@ -103,6 +103,7 @@
                                     p {
                                         color: #8B8B8B;
                                         margin-bottom: 0px;
+                                        line-height: normal;
                                     }
                                 }
                             }
@@ -568,6 +569,12 @@
                                     h6 {
                                         font-size: 15px;
                                         line-height: 18px;
+                                    }
+
+                                    p {
+                                        margin-top: 2px;
+                                        font-size: 11px;
+                                        line-height: 12px;
                                     }
                                 }
 

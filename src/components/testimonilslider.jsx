@@ -11,7 +11,7 @@ import VideoPlayer from './videoplayer';
 const TestimonilSlider = (props) => {
     const { slides, options } = props;
     const autoplayRef = useRef(Autoplay()); // Create a ref to store the Autoplay instance
-    const [emblaRef, embla] = useEmblaCarousel(options, [Fade(), autoplayRef.current]);
+    const [emblaRef, embla] = useEmblaCarousel(options, [Fade()]);
     const [videoUrl, setVideoUrl] = useState("");
     const [isActive, setIsActive] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,7 +60,9 @@ const TestimonilSlider = (props) => {
                                             </div>
                                             <div className={styles.testimonialInfo}>
                                                 <div className={styles.testimonialName}>
-                                                    <h6>{item?.name}</h6>
+                                                    <h6>{item?.name}
+                                                        <p>{item?.position}</p>
+                                                    </h6>
                                                 </div>
                                                 <div className={styles.testimonialRating}>
                                                     <div className={styles.testimonialNumbers}>

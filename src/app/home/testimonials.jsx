@@ -12,8 +12,8 @@ import { TitleBorderLine } from '../app-constants'
 const OPTIONS = { align: 'center', loop: true, duration: 30 }
 const SLIDES = [
     {
-        name: "Heyman",
-        position: "Founder, Creator Of Glorify",
+        name: "Heyman, Director, Director",
+        position: "Brain Wide Global Immigration",
         txt: 'The website design they created for us is very modern and it exceeded our expectations.Tim and his team have provided superb support to us throughout the project.',
         videoUrl: "/home/test/video1.mp4",
         img: IMG01.src,
@@ -21,21 +21,21 @@ const SLIDES = [
 
     },
     {
-        name: "Ralph",
-        position: "Founder, Creator Of Glorify",
+        name: "Ralph, Owner & CEO",
+        position: "Mirage Luxury Travel",
         txt: 'They really brought us some good sales with their Facebook and Instagram ad campaigns. The customer support from Tim kept us updated on the progress of the social media campaigns.',
         videoUrl: "/home/test/video2.mp4",
         img: IMG02.src,
-        rating: "4.9"
+        rating: "4.8"
 
     }
     , {
-        name: "Jean Gilford",
-        position: "Founder, Creator Of Glorify",
+        name: "Jean Gilford, CEO",
+        position: "Institute Of Hazardous Materials Management",
         txt: "Within 45 minutes, Ronnie sorted out the problem with our Facebook page. He didn’t try to sell me other stuff but only focused on my problem and solved it. I will be working with Ronnie on other projects in the future.",
         videoUrl: "/home/test/video3.mp4",
         img: IMG03.src,
-        rating: "4.9"
+        rating: "5.0"
     }
 ]
 const Testimonials = () => {
