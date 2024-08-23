@@ -68,7 +68,7 @@ const SLIDES = [
     {
         title: (
             <>
-                Unlocking YouTube Revenue: How <span>Randy Sage</span> Films Achieved $12,500+ in Monetization
+                Unlocking YouTube Revenue: How <span>Randy Sage Films</span> Achieved $12,500+ in Monetization
             </>
         ),
         txt: "Randy Sage Films partnered with Click First SMM to enhance their YouTube SEO efforts, and over the course of 12 months, the results have been outstanding. Within just 6 months, their channel experienced significant growth, including over 2 million video views, 111,000+ watch hours, and 8,000 new subscribers. This surge in engagement has translated into more than $12,500 in earnings via monetization. Our strategic SEO approach has proven to be highly effective, driving impressive performance and financial success for Randy Sage Films.",
