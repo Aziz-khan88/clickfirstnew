@@ -26,6 +26,11 @@
                         height: 440px;
                         display: block;
 
+                        iframe {
+                            width: 100%;
+                            height: 450px;
+                        }
+
                         img {
                             height: 100%;
                             width: 100%;
@@ -121,6 +126,7 @@
 
                                     svg {
                                         margin-left: 10px;
+                                        height: 45px;
                                     }
                                 }
 
@@ -152,6 +158,10 @@
 
                         .testimonialImg {
                             height: 440px;
+
+                            iframe {
+                                height: 400px;
+                            }
 
                             .playBtn {
                                 svg {
@@ -283,6 +293,10 @@
                         .testimonialImg {
                             height: 300px;
 
+                            iframe {
+                                height: 350px;
+                            }
+
                             .playBtn {
                                 svg {
                                     height: 70px;
@@ -347,6 +361,10 @@
 
                         .testimonialImg {
                             height: 300px;
+
+                            iframe {
+                                height: 260px;
+                            }
 
                             .playBtn {
                                 svg {
