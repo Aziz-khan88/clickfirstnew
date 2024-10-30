@@ -1,4 +1,4 @@
-import { CarouselArrow, ClutchFav, PlayButton } from '@/src/app/app-constants';
+import { CarouselArrow, ClutchFav, GoogleFav, PlayButton, TrustPilotFav, YelpFav } from '@/src/app/app-constants';
 import styles from "@/styles/components/testimonialslider.module.scss";
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -18,7 +18,7 @@ const TestimonilSlider = (props) => {
 
     const handleSlideClick = (url) => {
         setIsActive(true);
-        setVideoUrl(url);
+        setVideoUrl(`${url}?autoplay=1&controls=0`);
     };
 
     useEffect(() => {
@@ -66,7 +66,9 @@ const TestimonilSlider = (props) => {
                                                 </div>
                                                 <div className={styles.testimonialRating}>
                                                     <div className={styles.testimonialNumbers}>
-                                                        4.9 / 5.0 <ClutchFav />
+                                                        <div>{item?.rating} / 5.0
+                                                            {item?.platform}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,7 +77,7 @@ const TestimonilSlider = (props) => {
                                     <Col lg={6} md={6} className="my-auto">
                                         <div className={styles.testimonialImg}>
                                             {isActive && currentIndex === index ? (
-                                                <VideoPlayer testVideo={videoUrl} />
+                                                <VideoPlayer videoUrl={videoUrl} />
                                             ) : (
                                                 <>
                                                     <Image

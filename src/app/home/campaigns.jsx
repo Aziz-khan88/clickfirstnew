@@ -1,12 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/campaigns.module.scss"
-import Image from "next/image"
-import CampaignsImg from "media/home/CampaignsImg.webp"
 import Link from "next/link"
 import FadeInSection from "@/src/components/fadesection"
 
 
 const Campaigns = () => {
+    const CampaignVideo = "/videos/CampaignVideo.mp4";
     return (
         <section className={`ptb-100 ${styles.campaignsSec}`}
         >
@@ -26,9 +25,10 @@ const Campaigns = () => {
                         </div>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
-                        <FadeInSection>
-                            <Image src={CampaignsImg} alt="CampaignsImg" />
-                        </FadeInSection>
+                        <video width="100%" controls={false} autoPlay loop muted preload="none" style={{ maxWidth: '100%' }}>
+                            <source src={CampaignVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </Col>
                 </Row>
             </Container>
