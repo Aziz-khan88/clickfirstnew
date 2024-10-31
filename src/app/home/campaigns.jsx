@@ -5,7 +5,6 @@ import FadeInSection from "@/src/components/fadesection"
 
 
 const Campaigns = () => {
-    const CampaignVideo = "/videos/CampaignVideo.mp4";
     return (
         <section className={`ptb-100 ${styles.campaignsSec}`}
         >
@@ -26,7 +25,7 @@ const Campaigns = () => {
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
                         <video width="100%" controls={false} autoPlay loop muted preload="none" style={{ maxWidth: '100%' }}>
-                            <source src={CampaignVideo} type="video/mp4" />
+                            <source src="https://player.vimeo.com/progressive_redirect/playback/1025061331/rendition/1080p/file.mp4?loc=external&log_user=0&signature=3345c67f07493cd0f4599c8911519a89512c7c38e79c1b5324cedd953a6b517d" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </Col>

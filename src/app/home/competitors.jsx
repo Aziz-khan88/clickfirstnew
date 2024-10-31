@@ -6,7 +6,6 @@ import { useEffect, useRef } from 'react';
 
 
 const Competitors = () => {
-    const VideoItem = "/videos/CompetitorsVideo.mp4";
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -49,7 +48,7 @@ const Competitors = () => {
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
                         <video width="100%" controls={false} autoPlay loop muted preload="none" ref={videoRef} style={{ maxWidth: '100%' }}>
-                            <source src={VideoItem} type="video/mp4" />
+                            <source src="https://player.vimeo.com/progressive_redirect/playback/1025057629/rendition/720p/file.mp4?loc=external&log_user=0&signature=1588c07d2b655e6d0d5e88dd553920232355fcb7275f3001dca123d50292b5ab" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </Col>

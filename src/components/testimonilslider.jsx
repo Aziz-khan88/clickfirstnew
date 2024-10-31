@@ -18,7 +18,7 @@ const TestimonilSlider = (props) => {
 
     const handleSlideClick = (url) => {
         setIsActive(true);
-        setVideoUrl(`${url}?autoplay=1&controls=0`);
+        setVideoUrl(url);
     };
 
     useEffect(() => {
@@ -66,7 +66,7 @@ const TestimonilSlider = (props) => {
                                                 </div>
                                                 <div className={styles.testimonialRating}>
                                                     <div className={styles.testimonialNumbers}>
-                                                        <div>{item?.rating} / 5.0
+                                                        <div className='d-flex align-items-center'>{item?.rating} / 5.0
                                                             {item?.platform}
                                                         </div>
                                                     </div>
@@ -77,16 +77,17 @@ const TestimonilSlider = (props) => {
                                     <Col lg={6} md={6} className="my-auto">
                                         <div className={styles.testimonialImg}>
                                             {isActive && currentIndex === index ? (
-                                                <VideoPlayer videoUrl={videoUrl} />
+                                                <VideoPlayer testVideo={videoUrl} />
                                             ) : (
                                                 <>
                                                     <Image
-                                                        src={item.img}
+                                                        src={`https://vumbnail.com/${item.videoId}.jpg`}
                                                         alt={item?.name}
                                                         width={812}
                                                         height={440}
                                                         className={`${currentIndex === index ? 'zoom-out' : ''}`}
                                                     />
+
                                                     <div className={styles.playBtn} onClick={() => handleSlideClick(item.videoUrl)}>
                                                         <PlayButton />
                                                     </div>

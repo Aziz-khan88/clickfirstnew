@@ -18,47 +18,47 @@ const data = [
     {
         title: "@kyleecampbell",
         img: KyleecampBell.src,
-        videoUrl: "home/brands/video/@kyleecampbell.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025063978/rendition/1080p/file.mp4?loc=external&log_user=0&signature=d283dfca3cedf261ae45bed8cab7851db1615720816cfaf43f1e47bb014df32c"
     },
     {
         title: "@julesjessica",
         img: JulesJessica.src,
-        videoUrl: "home/brands/video/@julesjessica.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066117/rendition/1080p/file.mp4?loc=external&log_user=0&signature=8d1a86947dcae31184561ad5f8fb908d67055513b640b4c40fd7312534178fb04"
     },
     {
         title: "@ListingWithLexi",
         img: ListingWithLexi.src,
-        videoUrl: "home/brands/video/@ListingWithLexi.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066183/rendition/1080p/file.mp4?loc=external&log_user=0&signature=9ffac14f02ce8697f6db1f3f70b5d434a23d5fdf1e9412a5f47571de8e9ec230"
     },
     {
         title: "@jaime_gabaldoni",
         img: JaimeGabaldoni.src,
-        videoUrl: "home/brands/video/@jaime_gabaldoni.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066071/rendition/1080p/file.mp4?loc=external&log_user=0&signature=bad7c7d8ee92a5255fac15114d27d741de6ab32bf6d704a69f102ba25d8091fa"
     },
     {
         title: "@blissedhappiness",
         img: BlissedHappiness.src,
-        videoUrl: "home/brands/video/@blissedhappiness.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066007/rendition/720p/file.mp4?loc=external&log_user=0&signature=c3b1fd513e8b3d4de419bb2dbdfa09b1204254989f6f1b3da8373382ea13b6ea"
     },
     {
         title: "@pbadvancedaesthetics",
         img: PbadvanceDaeshetics.src,
-        videoUrl: "home/brands/video/@pbadvancedaesthetics.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066285/rendition/720p/file.mp4?loc=external&log_user=0&signature=b066eb183249e621627614175fe47e0f457c98a45846a87ff47ce719a6e66027"
     },
     {
         title: "@odysseyelixir",
         img: OdyssEyeLixir.src,
-        videoUrl: "home/brands/video/@odysseyelixir.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066238/rendition/1080p/file.mp4?loc=external&log_user=0&signature=46c97b9249be10bc57cd45bad5b1ce675c6e10b284f8a7f0cf54d4e91953ac61"
     },
     {
         title: "@cece_barnes",
         img: Cece_Barnes.src,
-        videoUrl: "home/brands/video/@cece_barnes.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066042/rendition/720p/file.mp4?loc=external&log_user=0&signature=c0d7439d62c18c7485d83502527f1ea62fe0b02d9e3afd2ca667b378bbfa0cf9"
     },
     {
         title: "@juliakhara",
         img: JuliAkhara.src,
-        videoUrl: "home/brands/video/@juliakhara.mp4"
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025066139/rendition/1080p/file.mp4?loc=external&log_user=0&signature=3cb38a1ecd6989c375ae7cf2d0734c140ca327551422edce447ebddd1174c0e3"
     },
 ]
 
