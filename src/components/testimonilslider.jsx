@@ -34,16 +34,18 @@ const TestimonilSlider = (props) => {
     const prevButtonHandler = () => {
         if (embla) {
             embla.scrollPrev();
-            autoplayRef.current.play(); // Restart autoplay
+            autoplayRef.current.stop();
+            autoplayRef.current.reset();
         }
     };
 
     const nextButtonHandler = () => {
         if (embla) {
             embla.scrollNext();
-            autoplayRef.current.play(); // Restart autoplay
+            autoplayRef.current.stop();
+            autoplayRef.current.reset();
         }
-    };
+    }
 
     return (
         <section className={`${styles.embla} testslider`}>
@@ -81,9 +83,9 @@ const TestimonilSlider = (props) => {
                                             ) : (
                                                 <>
                                                     <Image
-                                                        src={`https://vumbnail.com/${item.videoId}.jpg`}
+                                                        src={item.videoId}
                                                         alt={item?.name}
-                                                        width={812}
+                                                        width={800}
                                                         height={440}
                                                         className={`${currentIndex === index ? 'zoom-out' : ''}`}
                                                     />
